@@ -1,0 +1,66 @@
+===============================
+HARI 16 - Flexbox Lanjutan
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memberi jarak antar item dengan gap.
+- Membuat item turun ke baris baru dengan flex-wrap.
+- Mengatur pembesaran/penyusutan item dengan flex-grow, flex-shrink, dan
+  flex-basis.
+- Menyejajarkan satu item secara khusus dengan align-self.
+
+[2] TEORI SINGKAT
+- gap: memberi jarak antar item flex tanpa perlu margin. Contoh: gap: 10px;
+  atau gap: 10px 20px (baris kolom).
+- flex-wrap: nowrap (default, memaksa satu baris) atau wrap (boleh turun baris
+  bila sempit).
+- flex-basis: ukuran awal item sepanjang MAIN axis.
+- flex-grow: berapa bagian ruang SISA yang diambil. 0 = tidak membesar,
+  1 = mengambil ruang sisa. Bila dua item sama-sama 1, sisa dibagi rata.
+- flex-shrink: apakah item boleh menyusut bila ruang kurang. 1 = boleh.
+- align-self: mengatur perataan satu item saja sepanjang CROSS axis,
+  menimpa align-items milik induk.
+
+Singkatan flex: grow shrink basis. Contoh: flex: 1 1 100px;
+
+[3] ANALOGI
+Bayangkan kursi di meja panjang.
+- gap = jarak antar kursi.
+- flex-wrap = bila meja penuh, kursi berikutnya ditaruh di baris belakang.
+- flex-grow = orang yang melebarkan kursinya untuk mengisi meja yang kosong.
+- flex-shrink = orang yang mau merapatkan kursinya bila meja sempit.
+- align-self = satu kursi yang dipindah ke ujung meja sendiri.
+
+[4] KODE CONTOH
+Pada style.css:
+- .galeri { display: flex; flex-wrap: wrap; gap: 10px; }
+  membuat 6 kotak mengalir dan turun baris bila sempit, dengan jarak rapi.
+- .kotak memakai flex-basis: 60px sebagai ukuran awal.
+- .tumbuh memakai flex-grow: 1 sehingga kotak B melebar mengisi ruang kosong.
+- .tumbuh juga memakai align-self: center dan tinggi lebih besar, jadi kotak
+  B berbeda perataan dengan A dan C.
+- .kecil memakai flex-grow: 0 agar tidak ikut membesar.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah gap .galeri menjadi 20px lalu amati jaraknya.
+2. Ubah .kotak flex-basis menjadi 100px dan lihat jumlah per baris berubah.
+3. Hapus flex-wrap: wrap lalu perhatikan kotak jadi menyempit.
+4. Kembalikan wrap, lalu ubah .tumbuh flex-grow menjadi 2.
+5. Tambahkan align-self: flex-start pada salah satu .kecil.
+
+[6] TANTANGAN (5 menit)
+Buat baris flex berisi 4 kotak. Atur dua kotak flex-grow: 1 dan dua kotak
+flex-basis: 80px. Jelaskan bagaimana ruang terbagi dan mengapa flex-wrap
+penting untuk tampilan sempit.
+
+[7] RINGKASAN
+- gap memberi jarak antar item flex.
+- flex-wrap: wrap membuat item turun baris saat sempit.
+- flex-basis = ukuran awal, flex-grow = ambil ruang sisa, flex-shrink = menyusut.
+- align-self mengatur perataan satu item saja.
+
+[8] PERSIAPAN BESOK
+Besok: CSS Grid (display: grid, grid-template-columns/rows, gap,
+grid-column/row span).

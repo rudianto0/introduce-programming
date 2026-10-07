@@ -1,0 +1,64 @@
+===============================
+HARI 05 - Daftar dan Tabel
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat daftar bullet dengan <ul> dan <li>.
+- Membuat daftar bernomor dengan <ol> dan <li>.
+- Membuat daftar istilah dengan <dl>, <dt>, dan <dd>.
+- Menyusun data dalam tabel memakai <table>, <tr>, <th>, dan <td>.
+
+[2] TEORI SINGKAT
+Daftar dibagi tiga:
+- <ul> (unordered list) : daftar tanpa urutan, ditandai bulatan.
+- <ol> (ordered list) : daftar bernomor otomatis.
+- <dl> (description list) : daftar istilah. <dt> untuk istilah dan
+  <dd> untuk penjelasannya.
+
+Tabel dipakai untuk data yang berbentuk baris dan kolom. Strukturnya:
+- <table> : pembungkus tabel.
+- <tr> (table row) : satu baris.
+- <th> (table header) : sel judul, biasanya dicetak tebal.
+- <td> (table data) : sel berisi data.
+
+Atribut border="1" memberi garis, tetapi nanti saat belajar CSS,
+garis tabel sebaiknya diatur lewat CSS.
+
+[3] ANALOGI
+Daftar bullet seperti daftar belanja di kertas. Daftar bernomor
+seperti langkah resep masakan (urutan penting). Tabel seperti lembar
+absensi kelas: ada kolom nama dan kolom nilai, tersusun rapi.
+
+[4] KODE CONTOH
+- <ul>+<li> : setiap item daftar dibungkus <li>.
+- <ol>+<li> : penomoran otomatis, kita tidak menulis angka.
+- <dl>, <dt>, <dd> : pasangan istilah dan artinya.
+- <table border="1"> : bikin garis agar terlihat.
+- <tr> : membungkus satu baris tabel.
+- <th> : sel judul (header), <td> : sel data biasa.
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama list.html.
+2. Tulis struktur dasar HTML.
+3. Buat <h1>Hobi dan Rencana</h1>.
+4. Buat <ul> berisi 3 hobi kamu.
+5. Buat <ol> berisi 4 langkah rencana belajarmu.
+6. Buat <dl> berisi 2 istilah dan artinya.
+7. Buat <hr>, lalu buat <table border="1"> dengan 3 baris:
+   baris pertama memakai <th> untuk judul kolom "Hari" dan "Kegiatan".
+8. Simpan dan buka di browser.
+
+[6] TANTANGAN (5 menit)
+Tambahkan daftar bersarang: di dalam salah satu <li> pada <ol>,
+buat <ul> berisi dua catatan kecil. Pastikan tampil rapi.
+
+[7] RINGKASAN
+- ul = bullet, ol = bernomor, keduanya memakai li.
+- dl, dt, dd untuk daftar istilah.
+- table membungkus tr, th, dan td.
+- tr = baris, th = judul kolom, td = data.
+- border="1" hanya untuk latihan; nanti diatur dengan CSS.
+
+[8] PERSIAPAN BESOK
+Besok: membuat formulir input dari pengguna.

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari 34 - Integrasi Akhir dan Penutup</title>
+  <style>
+    :root { --biru: #2b7de9; --hijau: #1f9d55; --merah: #e5484d; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px; line-height: 1.6; color: #1f2937; }
+    header { text-align: center; margin-bottom: 24px; }
+    .kartu { border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    #pilihan button { display: block; width: 100%; text-align: left; margin: 8px 0; padding: 12px;
+                      border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; cursor: pointer; font-size: 15px; }
+    #pilihan button:hover:enabled { border-color: var(--biru); }
+    #pilihan button.benar { background: #e7f7ee; border-color: var(--hijau); color: var(--hijau); font-weight: bold; }
+    #pilihan button.salah { background: #fdecec; border-color: var(--merah); color: var(--merah); font-weight: bold; }
+    #pilihan button:disabled { cursor: default; }
+    #tanya { font-size: 18px; font-weight: bold; }
+    #info { color: #666; }
+    #hasil { min-height: 24px; font-weight: bold; }
+    .skor { text-align: center; margin-top: 12px; }
+    .rekap { margin-top: 32px; }
+    .rekap ul { padding-left: 20px; }
+    .badge { display: inline-block; background: #eef6ff; color: var(--biru); padding: 2px 8px; border-radius: 12px; font-size: 13px; margin: 2px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kuis Mini JavaScript</h1>
+    <p>Aplikasi integrasi akhir: HTML + CSS + JavaScript.</p>
+  </header>
+
+  <main class="kartu">
+    <p id="tanya">Memuat soal...</p>
+    <div id="pilihan"></div>
+    <p id="info"></p>
+    <p id="hasil"></p>
+    <p class="skor" id="skorTerbaik"></p>
+  </main>
+
+  <section class="rekap">
+    <h2>Rekap 34 Hari Belajar</h2>
+    <p>
+      <span class="badge">Hari 1-20: HTML &amp; CSS</span>
+      <span class="badge">Hari 21-34: JavaScript</span>
+    </p>
+    <ul>
+      <li><b>HTML</b> - struktur halaman (tag, atribut, form).</li>
+      <li><b>CSS</b> - tampilan (warna, box model, flexbox, grid, responsive).</li>
+      <li><b>JavaScript dasar</b> - variabel, tipe data, operator, kondisi, perulangan, fungsi.</li>
+      <li><b>JavaScript struktur data</b> - array dan object.</li>
+      <li><b>DOM &amp; Event</b> - mengubah halaman dan menanggapi aksi pengguna.</li>
+      <li><b>Menyimpan data</b> - localStorage dan JSON.</li>
+      <li><b>Ambil data</b> - fetch, Promise, async/await.</li>
+      <li><b>Proyek</b> - To-Do List dan Kuis Mini ini.</li>
+    </ul>
+
+    <h2>Langkah Selanjutnya</h2>
+    <ul>
+      <li><b>Git &amp; GitHub</b> - menyimpan versi kode dan berbagi proyek.</li>
+      <li><b>React</b> - pustaka JavaScript untuk membangun antarmuka yang kompleks.</li>
+      <li><b>Node.js</b> - menjalankan JavaScript di server, membuat API dan database.</li>
+      <li>Teruslah berlatih dengan membuat proyek kecil setiap minggu!</li>
+    </ul>
+    <p><b>Selamat!</b> Kamu telah menyelesaikan perjalanan 34 hari dari nol hingga membuat aplikasi web interaktif.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

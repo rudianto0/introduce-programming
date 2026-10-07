@@ -1,0 +1,68 @@
+===============================
+HARI 11 - Teks & Tipografi
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengubah jenis, ukuran, dan ketebalan huruf.
+- Mengatur perataan teks dan jarak antar baris.
+- Membedakan satuan px, em, rem, dan %.
+
+[2] TEORI SINGKAT
+Properti teks penting:
+- font-family : jenis huruf. Tulis beberapa nama sebagai cadangan, dan akhiri
+  dengan generic seperti sans-serif.
+  Contoh: font-family: "Segoe UI", Arial, sans-serif;
+- font-size   : ukuran huruf.
+- font-weight : ketebalan huruf. Nilai: normal, bold, atau angka 100-900.
+- text-align  : perataan teks: left, center, right, justify.
+- line-height : jarak antar baris. Angka tanpa satuan berarti kelipatan ukuran
+  font. Contoh 1.6 = 1.6 kali ukuran font.
+
+Satuan ukuran:
+- px  : ukuran tetap, tidak berubah walau setting browser diubah.
+- em  : relatif terhadap ukuran font ELEMEN INDUK (parent).
+- rem : relatif terhadap ukuran font ROOT (tag html), jadi lebih konsisten.
+- %   : relatif terhadap ukuran induk (mirip em untuk font-size).
+
+[3] ANALOGI
+Tipografi itu seperti mengatur tulisan di buku catatan.
+- font-family = memilih pulpen atau huruf stensil yang dipakai.
+- font-size = besar kecilnya huruf.
+- font-weight = menebalkan huruf seperti spidol.
+- line-height = jarak antar baris agar tidak berdesakan.
+- rem = ukuran standar yang sama di semua halaman, em = ukuran yang
+  menyesuaikan ukuran induknya seperti anak yang memakai baju dewasa.
+
+[4] KODE CONTOH
+Pada style.css:
+- html { font-size: 16px; } menetapkan 1rem = 16px.
+- body memberi font-family cadangan dan line-height: 1.6 untuk semua teks.
+- h1 { font-size: 1.75rem; } membuat judul 1.75 x 16px = 28px.
+- .subjudul memakai em dan font-weight: 300 agar terlihat tipis.
+- .seksi memakai px tetap dan text-align: center.
+- .deskripsi memakai font-size: 95% dan line-height: 1.8 agar enak dibaca.
+- .avatar memakai line-height sama dengan height agar inisial pas di tengah.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah html { font-size: 16px; } menjadi 18px dan perhatikan semua ukuran rem.
+2. Ganti font-family body menjadi "Times New Roman", serif.
+3. Buat h1 memakai font-weight: 800.
+4. Ubah text-align .deskripsi menjadi justify dan bandingkan tampilannya.
+5. Naikkan line-height .deskripsi menjadi 2 dan rasakan bedanya.
+
+[6] TANTANGAN (5 menit)
+Buat class .kutipan dengan font-size: 1.2rem, font-weight: bold, dan
+text-align: center. Pasang di satu paragraf baru, lalu jelaskan mengapa
+memakai rem lebih aman daripada px saat ukuran root diubah.
+
+[7] RINGKASAN
+- font-family = jenis huruf (sertakan cadangan + generic).
+- font-size, font-weight, text-align, line-height mengatur tampilan teks.
+- px tetap; em relatif ke induk; rem relatif ke root; % relatif ke induk.
+- line-height tanpa satuan = kelipatan ukuran font.
+
+[8] PERSIAPAN BESOK
+Besok: box model (margin, padding, border, width/height, box-sizing,
+box-shadow).

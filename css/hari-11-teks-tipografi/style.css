@@ -1,0 +1,78 @@
+/* =====================================
+   DAY 11 - TEXT & TYPOGRAPHY
+   ===================================== */
+
+/* Root font-size. 1rem = this value, usually 16px by default */
+html {
+    font-size: 16px;
+}
+
+body {
+    /* font-family: list of fonts, browser uses the first it can find */
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eef1f5;
+    /* line-height: space between lines (no unit = times font size) */
+    line-height: 1.6;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 320px;
+    border: 1px solid #dddddd;
+}
+
+.banner {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 20px;
+    color: #ffffff;
+}
+
+h1 {
+    /* rem is relative to the root (html) font-size */
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.subjudul {
+    /* em is relative to the PARENT font-size */
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 4px 0 0 0;
+}
+
+.avatar {
+    background-color: rgba(106, 17, 203, 0.15);
+    color: rgb(106, 17, 203);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 16px auto;
+    font-weight: bold;
+}
+
+.seksi {
+    /* px is a fixed size */
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    /* text-align: left | center | right | justify */
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.deskripsi {
+    color: #777777;
+    /* % is relative to the parent font-size (100% = same size) */
+    font-size: 95%;
+    text-align: center;
+    padding: 0 16px;
+    line-height: 1.8;
+}
+
+.daftar {
+    font-size: 0.95rem;
+    color: #444444;
+    padding: 0 16px 16px 36px;
+}

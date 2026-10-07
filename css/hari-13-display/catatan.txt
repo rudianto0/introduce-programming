@@ -1,0 +1,69 @@
+===============================
+HARI 13 - Display
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami perbedaan display: block, inline, dan inline-block.
+- Mengenal display: none dan bedanya dengan visibility: hidden.
+- Bisa memilih display yang tepat untuk kebutuhan layout.
+
+[2] TEORI SINGKAT
+Properti display menentukan bagaimana sebuah elemen mengambil ruang.
+
+- block: mengambil lebar penuh dan selalu mulai di baris baru.
+  Contoh: <div>, <p>, <h1>. Bisa diatur width dan height.
+- inline: mengalir dalam baris teks, hanya selebar isinya. width dan height
+  DIABAIKAN. Contoh: <span>, <a>, <strong>.
+- inline-block: ikut mengalir seperti inline, tetapi bisa diatur width, height,
+  margin, dan padding seperti block. Cocok untuk tombol atau kartu sejajar.
+- none: elemen dihapus sepenuhnya, ruangnya ikut hilang.
+
+Bandingkan dengan visibility: hidden. Ini menyembunyikan elemen tetapi
+RUANGNYA tetap ada (seperti kursi kosong yang masih dipesan).
+
+[3] ANALOGI
+Display itu seperti cara orang berdiri di barisan.
+- block = satu orang yang menempati satu baris penuh, orang berikutnya pindah
+  ke baris baru.
+- inline = kata-kata dalam satu kalimat yang menempel tanpa bisa diatur
+  ukurannya.
+- inline-block = poster yang bisa disusun berdampingan tapi tetap punya ukuran
+  sendiri.
+- none = orang yang pulang, kursinya hilang.
+- hidden = orang yang bersembunyi, kursinya tetap ada.
+
+[4] KODE CONTOH
+Pada style.css:
+- .blok memakai display: block sehingga tiap div mengambil satu baris penuh.
+- .inline dipakai pada <span> untuk mewarnai sebagian teks tanpa memutus baris.
+- .kotak-inline memakai display: inline-block supaya tiga kotak bisa berdiri
+  berdampingan dan tetap punya padding serta border-radius.
+- .disembunyikan memakai display: none; elemen ini tidak terlihat dan
+  tidak menyisakan ruang.
+- .tak-terlihat memakai visibility: hidden; elemen ini tidak terlihat tetapi
+  masih menyisakan celah kosong di antara elemen lain.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah .kotak-inline menjadi display: block dan lihat susunannya menumpuk.
+2. Kembalikan menjadi inline-block.
+3. Ubah .disembunyikan menjadi visibility: hidden dan amati ruang kosongnya.
+4. Tambahkan width: 100px dan height: 40px pada .inline, lalu jelaskan
+   mengapa nilainya tidak berpengaruh.
+5. Buat satu <span> baru dengan class="inline" di dalam .teks.
+
+[6] TANTANGAN (5 menit)
+Buat tiga <div class="kotak-inline"> baru lalu atur display dan padding-nya
+agar tampak seperti tombol berjajar. Jelaskan kapan sebaiknya memakai
+inline-block dibanding block.
+
+[7] RINGKASAN
+- block = lebar penuh + baris baru; inline = mengalir, tanpa width/height.
+- inline-block = mengalir tetapi bisa diatur ukurannya.
+- display: none menghapus elemen beserta ruangnya.
+- visibility: hidden menyembunyikan tetapi ruangnya tetap.
+
+[8] PERSIAPAN BESOK
+Besok: position (static, relative, absolute, fixed, sticky), z-index, dan
+membuat navbar sticky.

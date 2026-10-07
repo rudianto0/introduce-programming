@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari 14 - Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky navbar: stays at the top while scrolling -->
+    <nav class="navbar">
+        <span class="logo">Rudi.</span>
+        <a class="nav-link" href="#">Tentang</a>
+        <a class="nav-link" href="#">Kontak</a>
+    </nav>
+
+    <div class="card">
+        <h1>Position</h1>
+        <p class="deskripsi">
+            Scroll ke bawah untuk melihat navbar tetap menempel di atas.
+        </p>
+
+        <!-- relative parent + absolute child -->
+        <div class="kotak-relatif">
+            <span class="badge">Baru</span>
+            <p>Kotak ini induk yang position: relative.</p>
+        </div>
+
+        <p class="konten">Baris 1 untuk menambah tinggi halaman.</p>
+        <p class="konten">Baris 2 untuk menambah tinggi halaman.</p>
+        <p class="konten">Baris 3 untuk menambah tinggi halaman.</p>
+        <p class="konten">Baris 4 untuk menambah tinggi halaman.</p>
+        <p class="konten">Baris 5 untuk menambah tinggi halaman.</p>
+        <p class="konten">Baris 6 untuk menambah tinggi halaman.</p>
+    </div>
+
+    <!-- Fixed button: always visible at the corner -->
+    <a class="tombol-atas" href="#">↑ Atas</a>
+</body>
+</html>

@@ -1,0 +1,66 @@
+===============================
+HARI 02 - Struktur Dokumen HTML
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengenal kerangka wajib sebuah dokumen HTML.
+- Memahami peran <!DOCTYPE html>, html, head, dan body.
+- Mengatur karakter dengan meta charset dan tampilan di HP dengan meta viewport.
+- Menulis komentar HTML.
+
+[2] TEORI SINGKAT
+Setiap halaman HTML yang baik punya kerangka yang sama. Susunannya:
+
+1. <!DOCTYPE html>  : baris paling atas, menandakan versi HTML5.
+2. <html lang="id"> : pembungkus seluruh halaman.
+3. <head>           : berisi info tentang halaman (tidak tampil).
+4. <meta charset="UTF-8"> : agar huruf dan simbol tampil benar.
+5. <meta name="viewport" ...> : agar halaman rapi di layar HP.
+6. <title>          : judul yang muncul di tab browser.
+7. <body>           : semua isi yang terlihat pengunjung.
+
+Komentar ditulis dengan <!-- ... --> dan tidak akan tampil di
+browser. Komentar berguna untuk catatan atau menonaktifkan sementara
+sebagian kode.
+
+[3] ANALOGI
+Dokumen HTML seperti sebuah buku. <head> adalah halaman judul, daftar
+isi, dan informasi penerbit (tidak dibaca oleh pembaca utama). <body>
+adalah isi ceritanya. <title> adalah tulisan di punggung buku yang
+terlihat sebelum dibuka.
+
+[4] KODE CONTOH
+- <!DOCTYPE html> : wajib ada di baris pertama.
+- <html lang="id"> : lang="id" menandai bahasa halaman adalah Indonesia.
+- <meta charset="UTF-8"> : mendukung huruf seperti é, ü, dan emoji.
+- <meta name="viewport"> : membuat halaman menyesuaikan lebar layar.
+- <title> : coba lihat tab browser, judulnya berubah sesuai isi tag ini.
+- <body> : isi <h1> dan <p> di sini yang tampil di layar.
+
+[5] LATIHAN (10 menit)
+1. Di VS Code, buat file baru bernama struktur.html.
+2. Ketik sendiri baris <!DOCTYPE html> di baris pertama.
+3. Tambahkan <html> ... </html> sebagai pembungkus.
+4. Di dalamnya buat <head> dan <body> secara berurutan.
+5. Di dalam <head>, tambahkan:
+   - <meta charset="UTF-8">
+   - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   - <title>Latihan Struktur</title>
+6. Di dalam <body>, tulis satu <h1> dan satu <p>.
+7. Simpan dan buka di browser. Perhatikan judul di tab.
+8. Tambahkan satu komentar <!-- catatan saya --> di dalam body.
+
+[6] TANTANGAN (5 menit)
+Ubah nilai lang menjadi "en" dan ganti isi title. Amati perubahan
+judul di tab. Lalu kembalikan lang ke "id".
+
+[7] RINGKASAN
+- Struktur wajib: DOCTYPE, html, head, dan body.
+- head berisi informasi, body berisi isi yang terlihat.
+- meta charset menghindari huruf rusak.
+- meta viewport membuat halaman nyaman di HP.
+- Komentar HTML ditulis <!-- ... --> dan tidak tampil.
+
+[8] PERSIAPAN BESOK
+Besok: menulis teks dengan heading, paragraf, dan penekanan.

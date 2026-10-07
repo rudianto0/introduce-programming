@@ -1,0 +1,66 @@
+===============================
+HARI 27 - Object
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat object dengan pasangan key: value.
+- Mengakses properti dengan dot dan bracket.
+- Membuat method dan memahami this.
+- Mengenal nested object dan destructuring.
+- Memakai Object.keys dan Object.values.
+
+[2] TEORI SINGKAT
+Object menyimpan data dalam bentuk pasangan key: value di dalam kurung kurawal:
+const siswa = { nama: "Rudi", umur: 18 };
+- "nama" adalah key (kunci), "Rudi" adalah value (nilai).
+
+Ada dua cara mengakses:
+- Dot notation : siswa.nama
+- Bracket notation: siswa["nama"] atau siswa[kunci] (dipakai saat key disimpan di variabel).
+
+Method adalah fungsi di dalam object:
+perkenalan: function () { return `Halo ${this.nama}`; }
+Kata this merujuk ke object itu sendiri.
+
+Nested object artinya object di dalam object, contoh siswa.alamat.kota.
+
+Destructuring mengambil nilai ke variabel: const { nama, umur } = siswa;
+
+Object.keys(obj) mengembalikan daftar key, Object.values(obj) daftar nilai.
+
+Kesalahan umum: menulis siswa.nama padahal key memiliki spasi (harus pakai bracket), dan lupa bahwa this bergantung pada bagaimana fungsi dipanggil.
+
+[3] ANALOGI
+Object itu seperti KTP. Ada beberapa kolom: nama, tanggal lahir, alamat. Setiap kolom punya nama (key) dan isi (value). Kita bisa meminta isi kolom dengan menyebut namanya: "alamat" -> "Jakarta".
+
+[4] KODE CONTOH
+- index.html: menyediakan <p id="output"> dan memuat script.js.
+- script.js:
+  * Object siswa memiliki properti nama, umur, kelas, hobi (array), alamat (nested object), dan method perkenalan.
+  * Menunjukkan akses dot (siswa.nama) dan bracket (siswa[kunci]).
+  * Mengakses nested object dan array di dalam object.
+  * Destructuring nama dan umur dari siswa.
+  * Object.keys dan Object.values untuk melihat key/nilai.
+  * Menampilkan perkenalan ke halaman.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat object buku dengan properti judul, pengarang, dan tahun.
+2. Tampilkan judul dengan dot notation.
+3. Tampilkan pengarang dengan bracket notation memakai variabel key.
+4. Tambahkan method ringkasan() yang mengembalikan "judul - pengarang".
+5. Tampilkan hasil ringkasan() ke #output.
+
+[6] TANTANGAN (5 menit)
+Buat nested object mahasiswa dengan properti alamat { kota, provinsi }. Tampilkan kota memakai dot notation, lalu gunakan destructuring untuk mengambil kota.
+
+[7] RINGKASAN
+- Object menyimpan data sebagai key: value.
+- Akses dengan dot atau bracket; bracket untuk key dinamis.
+- Method adalah fungsi di dalam object; this menunjuk object itu.
+- Nested object dan destructuring memudahkan pengambilan data.
+- Object.keys/Object.values untuk menelusuri isi object.
+
+[8] PERSIAPAN BESOK
+Besok kita mulai DOM: document.querySelector dan mengubah teks, HTML, style, class, serta atribut.

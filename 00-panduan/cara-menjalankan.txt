@@ -1,0 +1,86 @@
+========================================================
+CARA MENJALANKAN & PERSIAPAN ALAT
+========================================================
+
+Yang kamu butuhkan hanya 2 hal:
+  1. Browser (Chrome / Edge / Firefox).
+  2. Text editor. Disarankan: Visual Studio Code (gratis).
+
+
+--------------------------------------------------------
+1. INSTAL VISUAL STUDIO CODE
+--------------------------------------------------------
+- Unduh di: https://code.visualstudio.com
+- Install seperti aplikasi biasa (Next -> Next -> Finish).
+- Saat pertama dibuka, pilih bahasa tampilan yang kamu nyaman.
+
+Ekstensi yang MEMBANTU (opsional, tidak wajib):
+- "Live Server"  -> halaman otomatis refresh saat kode disimpan.
+- "Prettier"     -> merapikan format kode otomatis.
+
+Cara memasang ekstensi:
+- Klik ikon kotak di sisi kiri (Extensions), atau tekan Ctrl+Shift+X.
+- Ketik nama ekstensi, klik "Install".
+
+
+--------------------------------------------------------
+2. MEMBUKA PROYEK MATERI INI
+--------------------------------------------------------
+- Buka VS Code.
+- Menu File -> Open Folder -> pilih folder:
+    D:\Rudi\IntroduceProgramming
+- Di panel kiri kamu akan melihat folder:
+    00-panduan, html, css, js
+
+
+--------------------------------------------------------
+3. MENJALANKAN FILE HTML (2 CARA)
+--------------------------------------------------------
+Cara A - Paling sederhana:
+- Masuk ke folder hari yang dipelajari, misalnya:
+    html\hari-01-pengenalan-html
+- Klik dua kali file "index.html".
+- File akan terbuka di browser. Selesai.
+
+Cara B - Dengan Live Server (disarankan):
+- Buka file index.html di VS Code.
+- Klik kanan di dalam editor -> "Open with Live Server".
+- Browser terbuka dan otomatis me-refresh setiap kamu menyimpan (Ctrl+S).
+
+
+--------------------------------------------------------
+4. MELIHAT OUTPUT JAVASCRIPT
+--------------------------------------------------------
+Pada fase JS (hari 21 ke atas), output bisa dilihat di 2 tempat:
+- Di halaman web itu sendiri (hasil ditampilkan lewat kode).
+- Di Console browser (untuk melihat console.log):
+    * Klik kanan di halaman -> "Inspect" / "Inspect Element".
+    * Pilih tab "Console".
+    * Pesan dari console.log() akan muncul di sana.
+
+
+--------------------------------------------------------
+5. RUTINITAS BELAJAR 30 MENIT PER HARI
+--------------------------------------------------------
+  1. Baca "catatan.txt" hari itu            (5 menit)
+  2. Baca kode & komentarnya                  (5 menit)
+  3. Jalankan di browser, amati hasilnya       (5 menit)
+  4. KETIK ULANG kode sendiri, jangan copy     (10 menit)
+  5. Kerjakan Tantangan di akhir catatan       (5 menit)
+
+Tips:
+- Mengetik ulang jauh lebih efektif daripada copy-paste.
+- Kalau error, baca pesan error di Console pelan-pelan; itu bagian belajar.
+- Jangan takut rusak. Kode bisa diulang dan diperbaiki kapan saja.
+
+
+--------------------------------------------------------
+6. KALAU ADA MASALAH
+--------------------------------------------------------
+- Halaman tidak berubah? Simpan file (Ctrl+S), lalu refresh (F5).
+- CSS tidak terlihat? Pastikan <link rel="stylesheet" href="style.css">
+  ada di dalam <head>, dan nama file sama persis (huruf besar/kecil).
+- JavaScript tidak jalan? Pastikan <script src="script.js"></script>
+  ada tepat sebelum penutup </body>.
+- localStorage diblokir di sebagian browser saat dibuka lewat file://.
+  Solusinya: jalankan lewat Live Server (lihat bagian 3, Cara B).

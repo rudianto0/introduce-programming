@@ -1,0 +1,69 @@
+===============================
+HARI 14 - Position
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami 5 nilai position: static, relative, absolute, fixed, sticky.
+- Menggunakan top, right, bottom, left sebagai koordinat.
+- Mengatur tumpukan elemen dengan z-index.
+- Membuat navbar yang menempel saat di-scroll (sticky).
+
+[2] TEORI SINGKAT
+position menentukan bagaimana elemen ditempatkan:
+
+- static  : nilai default. Elemen mengikuti alur normal, top/left tidak
+  berpengaruh.
+- relative: tetap di alur normal, tetapi bisa digeser dengan top/left. Ia juga
+  menjadi TITIK ACUAN untuk anak yang absolute.
+- absolute: keluar dari alur normal dan menempel pada induk terdekat yang
+  punya position selain static. Bila tidak ada, acuannya halaman.
+- fixed   : menempel pada layar. Walaupun halaman di-scroll, posisinya tetap.
+- sticky  : seperti relative awalnya, tetapi "lengket" ketika mencapai batas
+  tertentu (misalnya top: 0) saat di-scroll.
+
+z-index mengatur urutan tumpukan. Nilai lebih besar berada di depan.
+z-index hanya bekerja pada elemen yang position-nya bukan static.
+
+[3] ANALOGI
+Position itu seperti menempel catatan.
+- static = catatan biasa di buku.
+- relative = catatan yang bisa digeser sedikit, tetapi tetap ada di halaman.
+- absolute = sticker yang ditempel seenaknya di atas induknya.
+- fixed = magnet di pintu kulkas, tetap di situ walau kamu berjalan.
+- sticky = post-it di tepi meja, diam sampai kamu melewatinya lalu ikut.
+
+[4] KODE CONTOH
+Pada style.css:
+- .navbar memakai position: sticky; top: 0 agar menempel di atas saat scroll,
+  dan z-index: 10 supaya menutupi konten di bawahnya.
+- .kotak-relatif memakai position: relative sebagai acuan.
+- .badge memakai position: absolute dengan top: -12px dan right: 12px,
+  sehingga tanda "Baru" menempel di sudut kanan atas kotak.
+- .tombol-atas memakai position: fixed di kanan bawah, selalu terlihat.
+- Pada index.html, banyak paragraf ditambahkan agar halaman bisa di-scroll
+  dan efek sticky/fixed terlihat.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah top .badge menjadi 50% lalu ganti right menjadi -8px, amati posisinya.
+2. Ganti position .navbar dari sticky menjadi fixed, scroll, lalu jelaskan
+   perbedaannya.
+3. Kembalikan ke sticky.
+4. Ubah .tombol-atas menjadi position: absolute dan amati hasilnya.
+5. Hilangkan z-index .navbar dan lihat apa yang terjadi saat scroll.
+
+[6] TANTANGAN (5 menit)
+Tambahkan navbar kedua berisi satu link dengan posisi sticky di bawah navbar
+pertama (top diisi tinggi navbar). Jelaskan kapan memakai fixed dan kapan
+memakai sticky.
+
+[7] RINGKASAN
+- static (default), relative (bisa digeser + jadi acuan).
+- absolute menempel pada induk ber-position; fixed menempel di layar.
+- sticky diam lalu menempel saat di-scroll (cocok untuk navbar).
+- z-index mengatur tumpukan, hanya aktif pada elemen ber-position.
+
+[8] PERSIAPAN BESOK
+Besok: flexbox dasar (display: flex, flex-direction, justify-content,
+align-items).

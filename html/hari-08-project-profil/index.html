@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Budi Santoso</title>
+</head>
+<body>
+    <!-- header: identity of the person -->
+    <header>
+        <h1>Budi Santoso</h1>
+        <p><em>Calon Web Developer dari Bandung</em></p>
+    </header>
+
+    <!-- nav: quick links to page sections -->
+    <nav>
+        <a href="#tentang">Tentang</a> |
+        <a href="#pendidikan">Pendidikan</a> |
+        <a href="#keahlian">Keahlian</a> |
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+        <!-- section: about with a photo -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%234a90d9'/%3E%3Ctext x='60' y='75' font-size='48' fill='white' font-family='Arial' text-anchor='middle'%3EBS%3C/text%3E%3C/svg%3E"
+                alt="Foto profil Budi Santoso"
+                width="120">
+            <p>
+                Saya sedang belajar menjadi <strong>web developer</strong>.
+                Saya suka memecahkan masalah dan membangun hal berguna
+                untuk orang lain.
+            </p>
+        </section>
+
+        <!-- section: education in a table -->
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <table border="1">
+                <tr>
+                    <th>Tahun</th>
+                    <th>Institusi</th>
+                </tr>
+                <tr>
+                    <td>2022 - 2025</td>
+                    <td>SMK Negeri 1 Bandung</td>
+                </tr>
+                <tr>
+                    <td>2025 - sekarang</td>
+                    <td>Belajar mandiri HTML</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- section: skills as a list -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>HTML dasar</li>
+                <li>Kerja sama tim</li>
+                <li>Manajemen waktu</li>
+            </ul>
+            <h3>Rencana Belajar</h3>
+            <ol>
+                <li>Kuasai HTML</li>
+                <li>Pelajari CSS</li>
+                <li>Pelajari JavaScript</li>
+            </ol>
+        </section>
+
+        <!-- aside: extra fun fact -->
+        <aside>
+            <h3>Fakta Singkat</h3>
+            <blockquote>Saya belajar coding 30 menit setiap hari.</blockquote>
+        </aside>
+
+        <!-- section: contact form -->
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <p>
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="3" cols="30"></textarea>
+                </p>
+                <button type="submit">Kirim</button>
+            </form>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank">Profil LinkedIn saya</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- footer: closing info -->
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 Budi Santoso. Dibuat dengan HTML.</small></p>
+    </footer>
+</body>
+</html>

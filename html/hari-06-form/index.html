@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari 06 - Formulir</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+
+    <!-- A form wraps all input fields together -->
+    <form>
+        <!-- label with for="" is linked to an input by its id="" -->
+        <p>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>Jenis kelamin:</p>
+        <!-- Radio buttons with the same name form one group -->
+        <input type="radio" id="pria" name="kelamin" value="pria">
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="kelamin" value="wanita">
+        <label for="wanita">Wanita</label>
+
+        <p>
+            <!-- A checkbox can be checked or unchecked independently -->
+            <input type="checkbox" id="setuju" name="setuju">
+            <label for="setuju">Saya setuju dengan syarat dan ketentuan</label>
+        </p>
+
+        <p>
+            <label for="kota">Kota:</label><br>
+            <!-- select creates a dropdown of options -->
+            <select id="kota" name="kota">
+                <option value="">-- Pilih kota --</option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="pesan">Pesan:</label><br>
+            <!-- textarea is for longer multi-line text -->
+            <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea>
+        </p>
+
+        <!-- A submit button sends the form -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

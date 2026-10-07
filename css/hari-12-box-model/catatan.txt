@@ -1,0 +1,72 @@
+===============================
+HARI 12 - Box Model
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami 4 lapisan box model: content, padding, border, margin.
+- Mengatur ukuran dengan width dan height.
+- Memakai box-sizing: border-box agar ukuran mudah diprediksi.
+- Menambahkan bayangan dengan box-shadow.
+
+[2] TEORI SINGKAT
+Setiap elemen HTML dianggap sebagai kotak (box) yang terdiri dari 4 lapisan,
+dari dalam ke luar:
+1. content -> isi/teksnya sendiri.
+2. padding -> ruang di DALAM kotak, antara isi dan border.
+3. border  -> garis tepi kotak.
+4. margin  -> ruang di LUAR kotak, jarak ke elemen lain.
+
+Secara default (box-sizing: content-box), width hanya menghitung isi,
+sehingga padding dan border menambah ukuran total. Dengan
+box-sizing: border-box, width sudah termasuk padding dan border sehingga
+ukuran lebih mudah diprediksi. Banyak developer menulis:
+
+   * { box-sizing: border-box; }
+
+margin dan padding bisa ditulis singkat:
+- margin: 40px auto; artinya atas-bawah 40px, kiri-kanan auto (tengah).
+- padding: 0 20px; artinya atas-bawah 0, kiri-kanan 20px.
+
+box-shadow formatnya: x-offset y-offset blur spread color.
+Contoh 0 8px 20px rgba(0,0,0,0.12) = bayangan lembut di bawah kotak.
+
+[3] ANALOGI
+Box model itu seperti paket kiriman.
+- content = barang di dalamnya.
+- padding = bubble wrap yang melindungi barang.
+- border = kardusnya.
+- margin = jarak antar kardus di atas meja.
+
+[4] KODE CONTOH
+Pada style.css:
+- * { box-sizing: border-box; } membuat semua elemen menghitung padding dan
+  border di dalam width.
+- .card diatur width: 340px dan margin: 40px auto agar berada di tengah.
+- box-shadow di .card memberi kesan melayang.
+- .banner memakai padding: 20px agar teks tidak menempel di tepi.
+- .kotak-demo memakai border: 2px dashed dan padding 16px sebagai contoh.
+- margin pada .kotak-demo menambah jarak dari elemen lain.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Tambahkan * { box-sizing: border-box; } di paling atas style.css.
+2. Ubah width .card menjadi 360px dan lihat kotaknya melebar.
+3. Ganti box-shadow menjadi 0 2px 6px rgba(0,0,0,0.2) lalu bandingkan.
+4. Ubah padding .banner menjadi 24px 20px (atas-bawah 24, kiri-kanan 20).
+5. Ubah border .kotak-demo menjadi solid 1px #3498db.
+
+[6] TANTANGAN (5 menit)
+Buat class .kartu-kecil dengan width: 200px, padding: 12px, border: 1px solid,
+dan margin: 10px. Coba dengan dan tanpa box-sizing: border-box, lalu
+hitungkan berapa lebar totalnya masing-masing.
+
+[7] RINGKASAN
+- Box model: content, padding, border, margin (dari dalam ke luar).
+- padding = ruang dalam; margin = ruang luar.
+- box-sizing: border-box membuat width sudah termasuk padding & border.
+- margin: auto dipakai untuk menengahkan elemen block.
+- box-shadow menambah bayangan pada kotak.
+
+[8] PERSIAPAN BESOK
+Besok: display (block, inline, inline-block, none) dan visibility.

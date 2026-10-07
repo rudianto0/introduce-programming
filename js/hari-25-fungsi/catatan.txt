@@ -1,0 +1,68 @@
+===============================
+HARI 25 - Fungsi
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat fungsi dengan function declaration.
+- Memahami parameter (masukan) dan return (hasil).
+- Mengenal function expression dan arrow function.
+- Memakai default parameter.
+
+[2] TEORI SINGKAT
+Fungsi adalah blok kode yang diberi nama dan bisa dipanggil berkali-kali. Tujuannya agar kita tidak menulis kode berulang.
+
+Function declaration:
+function tambah(a, b) {
+  return a + b;
+}
+- a dan b disebut parameter (masukan).
+- return mengirim hasil keluar dari fungsi.
+
+Function expression menyimpan fungsi di dalam variabel:
+const kali = function (a, b) { return a * b; };
+
+Arrow function adalah cara singkat modern:
+const jumlah = (a, b) => a + b;
+Jika badannya hanya satu ekspresi, tanda kurung kurawal dan return boleh dihilangkan. Jika memakai { } maka wajib menulis return.
+
+Default parameter dipakai saat argumen tidak diberikan:
+function sapa(nama = "teman") { ... }
+
+Kesalahan umum: lupa menulis return sehingga fungsi menghasilkan undefined; atau menulis return padahal fungsinya hanya perlu menampilkan (itu tidak salah, hanya perlu dipahami).
+
+Analogi: fungsi itu seperti mesin. Kita masukkan bahan (parameter), mesin bekerja, lalu mengeluarkan produk (return).
+
+[3] ANALOGI
+Fungsi itu seperti resep masakan. Kamu menuliskan resepnya sekali (mendefinisikan fungsi), lalu memasak berkali-kali dengan bahan berbeda (memanggil dengan argumen berbeda).
+
+[4] KODE CONTOH
+- index.html: menyediakan <p id="output"> dan memuat script.js.
+- script.js:
+  * sapa(nama) mengembalikan sapaan memakai template literal.
+  * tambah(a, b) mengembalikan hasil penjumlahan.
+  * tampilkan(nama) tidak mengembalikan apa pun, hanya mencetak ke Console.
+  * kali sebagai function expression, jumlah dan bagi sebagai arrow function.
+  * sapaDefault memakai default parameter "teman".
+  * Hasil akhir ditampilkan ke halaman.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat fungsi luasPersegi(p, l) yang mengembalikan p * l.
+2. Panggil dengan (4, 5) dan tampilkan hasilnya.
+3. Buat arrow function kelilingPersegi(p, l) => 2 * (p + l).
+4. Buat fungsi sapaLengkap(nama) yang mengembalikan "Halo, <nama>".
+5. Tampilkan semua hasil ke #output.
+
+[6] TANTANGAN (5 menit)
+Buat fungsi cekGenap(angka) yang mengembalikan true jika angka genap dan false jika ganjil (petunjuk: gunakan %). Panggil untuk 4 dan 7.
+
+[7] RINGKASAN
+- Fungsi mengelompokkan kode agar dapat dipakai ulang.
+- Parameter adalah masukan, return adalah hasil keluaran.
+- Ada tiga gaya: declaration, expression, dan arrow.
+- Arrow function satu baris tidak perlu return eksplisit.
+- Default parameter mencegah nilai undefined saat argumen kosong.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar array: length, push/pop/shift/unshift, map, filter, find, includes, dan join.

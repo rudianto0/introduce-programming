@@ -1,0 +1,61 @@
+===============================
+HARI 22 - Tipe Data dan Operator
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengenal tipe data dasar: string, number, boolean, null, undefined.
+- Memakai operator aritmatika, perbandingan, dan logika.
+- Menggunakan template literal untuk menyusun teks.
+- Mengecek tipe data dengan typeof.
+
+[2] TEORI SINGKAT
+Tipe data adalah "jenis" dari sebuah nilai. Tipe dasar di JavaScript:
+- string : teks, ditulis di dalam tanda kutip, contoh "Halo" atau 'Halo'.
+- number : angka, baik bulat maupun desimal, contoh 25 atau 12.5.
+- boolean: hanya true atau false.
+- null   : nilai kosong yang sengaja kita isi.
+- undefined: variabel yang ada tetapi belum diberi nilai.
+
+Operator aritmatika: + - * / % (sisa bagi) dan ** (pangkat).
+Operator perbandingan menghasilkan true/false: > < >= <= === !==.
+Operator logika: && (DAN), || (ATAU), ! (BUKAN/negasi).
+
+Penting: gunakan === (sama persis, cek nilai dan tipe) daripada == (cek nilai saja).
+Contoh: 5 == "5" bernilai true, tetapi 5 === "5" bernilai false karena tipenya beda.
+
+Template literal memakai backtick (`) sehingga kita bisa menyisipkan nilai dengan ${...}.
+Contoh: `Halo ${nama}`.
+
+Kesalahan umum: menulis angka di dalam tanda kutip sehingga menjadi string ("5"). Akibatnya "5" + 1 menghasilkan "51", bukan 6.
+
+[3] ANALOGI
+Tipe data itu seperti wadah berbeda di dapur. Gelas (number) untuk air, kotak (string) untuk tulisan, saklar (boolean) hanya punya dua posisi: nyala atau mati. Kamu harus memakai wadah yang tepat agar hasilnya benar.
+
+[4] KODE CONTOH
+- index.html: menyediakan elemen <p id="output"> dan memuat script.js.
+- script.js:
+  * Mendeklarasikan contoh tiap tipe data dan memakai typeof untuk mengeceknya.
+  * Menampilkan hasil aritmatika, perbandingan, dan logika lewat console.log.
+  * Membuat template literal `Halo, nama saya ${fullName}...` lalu menampilkannya ke halaman memakai textContent.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat variabel panjang = 10 dan lebar = 5.
+2. Hitung luas (panjang * lebar) dan simpan di variabel luas.
+3. Tampilkan "Luas: <luas>" memakai template literal.
+4. Bandingkan panjang > lebar dan tampilkan hasilnya.
+5. Tampilkan typeof dari panjang, dan typeof dari "10" (pakai tanda kutip). Amati bedanya.
+
+[6] TANTANGAN (5 menit)
+Buat variabel teks berisi "5" (string) dan angka berisi 5 (number). Tampilkan hasil teks + 1 dan angka + 1. Jelaskan mengapa hasilnya berbeda.
+
+[7] RINGKASAN
+- Lima tipe dasar: string, number, boolean, null, undefined.
+- typeof dipakai untuk melihat tipe sebuah nilai.
+- Operator aritmatika menghitung, perbandingan menghasilkan boolean.
+- Gunakan === untuk membandingkan, hindari ==.
+- Template literal `${...}` memudahkan menyisipkan nilai ke teks.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar kondisi: if, else if, else, switch, ternary, dan truthy/falsy.

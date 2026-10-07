@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari 29 - Event</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 16px; line-height: 1.6; }
+    .kartu { border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+    button { padding: 8px 14px; cursor: pointer; }
+    input, select { padding: 6px; margin-top: 4px; }
+    #output { background: #eefaf0; border-left: 4px solid #1f9d55; padding: 12px 16px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Hari 29 - Event</h1>
+
+  <div class="kartu">
+    <button id="tombol">Klik Saya</button>
+    <p id="hasilKlik">Belum diklik.</p>
+  </div>
+
+  <div class="kartu">
+    <label for="inputNama">Ketik namamu:</label><br>
+    <input id="inputNama" type="text" placeholder="Nama...">
+    <p id="hasilInput">Input: -</p>
+  </div>
+
+  <div class="kartu">
+    <label for="pilihWarna">Pilih warna:</label><br>
+    <select id="pilihWarna">
+      <option value="">-- pilih --</option>
+      <option value="merah">Merah</option>
+      <option value="biru">Biru</option>
+    </select>
+    <p id="hasilChange">Perubahan: -</p>
+  </div>
+
+  <div class="kartu">
+    <form id="form">
+      <label for="email">Email:</label><br>
+      <input id="email" type="email" placeholder="nama@email.com" required>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="hasilSubmit">Belum dikirim.</p>
+  </div>
+
+  <p id="output">Memuat...</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

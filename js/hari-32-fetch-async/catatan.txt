@@ -1,0 +1,63 @@
+===============================
+HARI 32 - Fetch dan Async/Await
+Estimasi: 30 menit
+===============================
+
+CATATAN PENTING: pelajaran hari ini membutuhkan KONEKSI INTERNET karena mengambil data dari https://jsonplaceholder.typicode.com
+
+[1] TUJUAN HARI INI
+- Mengenal Promise secara sederhana.
+- Mengambil data dari internet dengan fetch().
+- Menunggu hasil dengan async/await.
+- Memeriksa error dan menampilkan data ke halaman.
+
+[2] TEORI SINGKAT
+Kadang data baru tersedia beberapa saat kemudian (misalnya dari server). JavaScript menanganinya dengan Promise, yaitu "nilai yang akan datang". fetch() adalah fungsi yang mengembalikan Promise.
+
+Cara membacanya dengan async/await:
+async function ambilData() {
+  const response = await fetch("https://.../users");
+  const data = await response.json();
+  console.log(data);
+}
+- Kata async menandai fungsi yang boleh memakai await.
+- await membuat program menunggu sampai hasilnya siap, tanpa menghentikan seluruh halaman.
+
+Penting: fetch hanya gagal (masuk catch) saat masalah jaringan. Jika server menjawab 404, fetch tetap "berhasil", jadi kita harus memeriksa response.ok dan melempar error sendiri dengan throw new Error(...).
+
+Kita membungkus kode dengan try { ... } catch (error) { ... } agar jika gagal, kita bisa menampilkan pesan yang ramah.
+
+jsonplaceholder.typicode.com/users adalah API contoh gratis untuk latihan. Struktur datanya berupa array of objects (name, email, dan lain-lain).
+
+[3] ANALOGI
+fetch itu seperti memesan makanan lewat aplikasi. Kamu menekan "pesan" (mengirim permintaan) dan mendapat nomor pesanan (Promise). Kamu menunggu pesanan datang (await), lalu baru membuka kotaknya (response.json()). Kalau kurir tidak datang karena jaringan putus, barulah muncul masalah (catch).
+
+[4] KODE CONTOH
+- index.html: tombol "Muat Data Pengguna", area status, dan <ul id="daftar">.
+- script.js:
+  * muatPengguna() bertanda async.
+  * await fetch mengirim permintaan; response.ok diperiksa.
+  * await response.json() mengubah respon menjadi data JavaScript.
+  * forEach membuat <li> untuk setiap pengguna lalu appendChild.
+  * try/catch menampilkan pesan error jika jaringan bermasalah.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri (butuh internet):
+1. Tambahkan tombol kedua "Muat Komentar".
+2. Buat async function yang mengambil https://jsonplaceholder.typicode.com/comments?_limit=5.
+3. Tampilkan email setiap komentar sebagai <li>.
+4. Ubah status menjadi "Memuat..." sebelum fetch.
+5. Uji dengan menyalakan/mematikan internet untuk melihat pesan error.
+
+[6] TANTANGAN (5 menit)
+Ambil https://jsonplaceholder.typicode.com/users, lalu tampilkan hanya pengguna yang nama kotanya (user.address.city) mengandung huruf "a". Gunakan filter sebelum menampilkan.
+
+[7] RINGKASAN
+- fetch() mengembalikan Promise; async/await membuatnya mudah dibaca.
+- response.json() juga perlu di-await.
+- Periksa response.ok karena fetch tidak otomatis gagal pada error HTTP.
+- try/catch untuk menangani kegagalan jaringan.
+- Pelajaran ini membutuhkan internet.
+
+[8] PERSIAPAN BESOK
+Besok kita membuat mini project: To-Do List lengkap (tambah, selesai, hapus, dan simpan ke localStorage).

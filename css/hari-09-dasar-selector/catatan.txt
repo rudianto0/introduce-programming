@@ -1,0 +1,72 @@
+===============================
+HARI 09 - Dasar Selector
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengetahui 3 cara memasang CSS: inline, internal, dan external.
+- Memahami selector element, class (titik), dan id (pagar).
+- Bisa menghubungkan file style.css ke index.html dengan tag <link>.
+
+[2] TEORI SINGKAT
+CSS (Cascading Style Sheets) dipakai untuk mengatur tampilan elemen HTML.
+Ada 3 cara memasang CSS:
+
+1. Inline  -> ditulis langsung di atribut style pada elemen.
+   Contoh: <p style="color: red;">Halo</p>
+2. Internal -> ditulis di dalam tag <style> di bagian <head>.
+3. External -> ditulis di file terpisah bernama style.css, lalu dipanggil
+   dengan <link rel="stylesheet" href="style.css">.
+
+Cara paling rapi dan dianjurkan adalah external, karena satu file CSS bisa
+dipakai banyak halaman HTML.
+
+Selector adalah "alamat" untuk memilih elemen mana yang mau diwarnai:
+- Element selector: p { }  -> semua tag <p>.
+- Class selector: .tombol { } -> semua elemen dengan class="tombol".
+  Class diawali titik dan boleh dipakai berulang.
+- ID selector: #nama { } -> elemen dengan id="nama". ID diawali pagar dan
+  hanya boleh satu kali di halaman.
+
+[3] ANALOGI
+Bayangkan CSS itu seperti seragam sekolah.
+- Element selector = "semua siswa kelas 7 pakai seragam biru".
+- Class selector = "siswa yang ikut ekskul pramuka pakai hasduk" (boleh banyak).
+- ID selector = "ketua kelas" (hanya satu orang di kelas itu).
+
+[4] KODE CONTOH
+Pada index.html:
+- <style> h1 { color: #2c3e50; } </style> adalah contoh INTERNAL CSS.
+- <p style="color: #e67e22;"> adalah contoh INLINE CSS.
+- <link rel="stylesheet" href="style.css"> memanggil file EXTERNAL CSS.
+
+Pada style.css:
+- p { font-family: Arial; } mengatur font semua paragraf.
+- .card { } mengatur kotak pembungkus, ditandai class="card".
+- .pekerjaan dan .deskripsi mengatur warna teks tiap bagian.
+- .tombol membuat link terlihat seperti tombol (background gelap, teks putih,
+  text-decoration: none untuk menghilangkan garis bawah).
+- #nama { font-size: 24px; } membesarkan judul nama lewat id.
+
+[5] LATIHAN (10 menit)
+Ketik ulang sendiri (jangan copy-paste):
+1. Buat file style.css baru dan tulis selector element untuk body:
+   body { background-color: #f4f4f9; font-family: Arial, sans-serif; }
+2. Tulis selector class .card dengan padding: 24px; dan background putih.
+3. Di index.html, ubah nilai color pada inline style menjadi warna favoritmu.
+4. Tambahkan satu paragraf baru dengan class="deskripsi" dan lihat warnanya.
+5. Ganti isi #nama dengan namamu sendiri lalu simpan dan refresh browser.
+
+[6] TANTANGAN (5 menit)
+Buat selector ID baru #slogan di style.css yang mengubah warna teks menjadi
+hijau, lalu pasang id="slogan" pada satu elemen di index.html. Pastikan hanya
+elemen itu yang berubah.
+
+[7] RINGKASAN
+- CSS mengatur tampilan; ada 3 cara pasang: inline, internal, external.
+- External (file style.css) adalah cara paling rapi.
+- Selector element = tag, class (.) = bisa banyak, id (#) = hanya satu.
+- Atribut href pada <link> harus sama dengan nama file CSS.
+
+[8] PERSIAPAN BESOK
+Besok: warna dan background (hex, rgb, rgba, gradient, opacity).

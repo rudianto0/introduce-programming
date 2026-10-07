@@ -1,0 +1,62 @@
+===============================
+HARI 33 - Project To-Do List
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Menggabungkan array of objects, DOM, event, dan localStorage.
+- Membuat aplikasi To-Do List yang benar-benar berfungsi.
+- Menambah, menandai selesai, dan menghapus tugas.
+- Menyimpan data agar tetap ada setelah refresh.
+
+[2] TEORI SINGKAT
+Kali ini semua yang sudah dipelajari digabung menjadi satu aplikasi.
+
+Struktur data (state) adalah array of objects:
+let todos = [ { teks: "Belajar JS", selesai: false }, ... ];
+
+Pola penting yang dipakai:
+- muat()  : membaca data dari localStorage saat halaman dibuka.
+- simpan(): menyimpan seluruh array ke localStorage dengan JSON.stringify.
+- render(): menggambar ulang daftar dari data todos.
+
+Setiap aksi (tambah, centang, hapus) mengubah array todos, lalu memanggil simpan() dan render(). Inilah pola "ubah data, gambar ulang". Dengan cara ini tampilan selalu sesuai data.
+
+Mengapa memakai index? Saat membuat tiap <li>, kita tahu posisinya di array (index). Saat tombol hapus diklik, kita memanggil todos.splice(index, 1) untuk menghapus item yang tepat.
+
+Kesalahan umum: mengubah tampilan HTML langsung tanpa mengubah data, sehingga setelah render ulang perubahannya hilang. Selalu ubah DATA-nya dulu.
+
+[3] ANALOGI
+Aplikasi ini seperti papan tugas di dapur. Kamu menulis tugas (tambah), mencentang jika selesai, mencoret dan membuang yang sudah beres (hapus). Setiap perubahan langsung dicatat di buku (localStorage) agar besok pagi catatannya masih ada.
+
+[4] KODE CONTOH
+- index.html: form untuk menambah, <ul id="daftarTugas"> untuk daftar, tombol "Hapus yang selesai", dan baris info.
+- script.js:
+  * muat() memuat data dari localStorage.
+  * render() membuat checkbox, teks, dan tombol hapus untuk setiap todo.
+  * Checkbox memanggil change yang mengubah todo.selesai.
+  * Tombol hapus memakai splice(index, 1).
+  * Tombol "Hapus yang selesai" memakai filter untuk membuang yang selesai.
+  * simpan() dipanggil setiap kali data berubah.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri satu per satu, uji setiap langkah:
+1. Buat dulu tampilan HTML (form + ul).
+2. Buat array todos kosong dan fungsi render() yang menampilkan teks saja.
+3. Tambahkan event submit untuk menambah todo.
+4. Tambahkan checkbox untuk menandai selesai.
+5. Tambahkan tombol hapus per item.
+6. Simpan ke localStorage dengan simpan().
+
+[6] TANTANGAN (5 menit)
+Tambahkan tombol "Ubah" di setiap item yang meminta teks baru (prompt) dan mengganti todo.teks, lalu simpan dan render ulang.
+
+[7] RINGKASAN
+- State (array of objects) adalah sumber kebenaran aplikasi.
+- Pola: ubah data -> simpan() -> render().
+- splice untuk hapus berdasarkan index, filter untuk menyaring.
+- localStorage membuat data bertahan setelah refresh.
+- Aplikasi ini adalah gabungan semua materi minggu ini.
+
+[8] PERSIAPAN BESOK
+Besok adalah hari terakhir: kita membuat aplikasi integrasi akhir (kuis) dan merangkum seluruh 34 hari.

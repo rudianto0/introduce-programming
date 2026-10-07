@@ -1,0 +1,65 @@
+===============================
+HARI 03 - Teks dan Heading
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memakai heading <h1> sampai <h6> dengan urutan yang benar.
+- Menulis paragraf dengan <p>.
+- Memberi penekanan dengan <strong> dan <em>.
+- Memakai <br>, <hr>, dan <blockquote>.
+
+[2] TEORI SINGKAT
+Heading adalah judul dan sub-judul. Ada enam level: <h1> paling
+besar dan penting, <h6> paling kecil. Gunakan hanya satu <h1> per
+halaman untuk judul utama, lalu <h2>, <h3> untuk bagian di bawahnya.
+
+<p> dipakai untuk paragraf. Penting: HTML mengabaikan enter dan
+spasi berlebih. Banyak spasi atau enter akan ditampilkan sebagai
+satu spasi saja.
+
+<strong> membuat teks tampak tebal dan bermakna "penting".
+<em> membuat teks miring dan bermakna "ditekankan". <br> memindahkan
+teks ke baris baru. <hr> membuat garis pemisah. <blockquote> dipakai
+untuk kutipan.
+
+[3] ANALOGI
+Heading seperti daftar isi sebuah buku: Bab, Sub-bab, dan Sub-sub-bab.
+Jika semua ditulis dengan ukuran sama, pembaca akan bingung. Ukuran
+yang bertingkat membantu otak menyusun informasi secara rapi, sama
+seperti susunan lemari yang tertata.
+
+[4] KODE CONTOH
+- <h1>..<h6> : tingkatkan pentingnya informasi secara berurutan.
+- <p> : satu ide pokok per paragraf.
+- <strong> : untuk kata kunci penting, jangan berlebihan.
+- <em> : untuk penekanan halus, misalnya istilah asing.
+- <br> : hanya untuk pemisah baris di dalam satu paragraf.
+- <hr> : pembatas antar bagian/topik.
+- <blockquote> : teks kutipan, biasanya menjorok ke dalam.
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama teks.html.
+2. Tulis struktur dasar (DOCTYPE, html, head, body).
+3. Di dalam body, ketik:
+   - <h1>Cerita Singkatku</h1>
+   - <h2>Pagi</h2> lalu paragraf tentang pagi harimu.
+   - <h2>Siang</h2> lalu paragraf tentang siangmu.
+4. Di salah satu paragraf, tebalkan satu kata dengan <strong>.
+5. Miringkan satu istilah dengan <em>.
+6. Tambahkan <hr> sebelum bagian <h2>Siang</h2>.
+7. Simpan dan buka di browser.
+
+[6] TANTANGAN (5 menit)
+Tambahkan sebuah <blockquote> berisi kata mutiara favoritmu, lalu
+atur satu paragraf memakai <br> untuk memisah dua baris alamat.
+
+[7] RINGKASAN
+- Heading berurutan dari h1 (terbesar) sampai h6 (terkecil).
+- Satu h1 per halaman untuk judul utama.
+- p untuk paragraf; enter dan spasi berlebih diabaikan HTML.
+- strong = penting, em = ditekankan.
+- br = baris baru, hr = garis, blockquote = kutipan.
+
+[8] PERSIAPAN BESOK
+Besok: menambahkan tautan (link) dan gambar.

@@ -1,0 +1,99 @@
+/* =====================================
+   DAY 14 - POSITION
+   static | relative | absolute | fixed | sticky
+   ===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eef1f5;
+    margin: 0;
+}
+
+/* sticky: behaves normal until scrolling, then sticks to top: 0 */
+.navbar {
+    position: sticky;
+    top: 0;
+    /* z-index keeps the navbar ABOVE other content */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #2c3e50;
+    padding: 14px 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-link {
+    color: #cfd8e3;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 360px;
+    border: 1px solid #dddddd;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+}
+
+.deskripsi {
+    color: #777777;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* relative: stays in normal flow but can be moved and becomes a reference */
+.kotak-relatif {
+    position: relative;
+    background-color: #f1f3f6;
+    border: 2px solid #6a11cb;
+    padding: 30px 16px 16px 16px;
+    margin: 16px 20px;
+    border-radius: 8px;
+}
+
+/* absolute: positioned relative to the nearest positioned ancestor */
+.badge {
+    position: absolute;
+    /* distances from the parent edges */
+    top: -12px;
+    right: 12px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.konten {
+    padding: 0 20px;
+    color: #444444;
+}
+
+/* fixed: stays in the same spot on the screen even when scrolling */
+.tombol-atas {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #6a11cb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}

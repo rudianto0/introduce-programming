@@ -1,0 +1,66 @@
+===============================
+HARI 18 - Pseudo & Transisi
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memakai pseudo-class :hover, :focus, dan :first-child.
+- Menambah hiasan dengan pseudo-element ::before dan ::after.
+- Membuat animasi halus dengan transition dan transform.
+
+[2] TEORI SINGKAT
+Pseudo-class memilih elemen pada KONDISI tertentu (ditandai satu titik dua):
+- :hover  -> saat kursor mouse berada di atas elemen.
+- :focus  -> saat elemen (misalnya input) sedang dipilih.
+- :first-child -> elemen pertama di dalam induknya.
+
+Pseudo-element menambah bagian yang tidak ada di HTML (ditandai dua titik dua):
+- ::before -> menambahkan konten sebelum isi elemen.
+- ::after  -> menambahkan konten setelah isi elemen.
+Keduanya WAJIB punya properti content, walau hanya content: "".
+
+transition membuat perubahan properti berjalan halus, bukan mendadak.
+Contoh: transition: background-color 0.3s ease;
+Properti pertama = apa yang dianimasikan, 0.3s = durasi.
+
+transform mengubah bentuk tanpa menggeser layout lain.
+Contoh: translateY(-3px) mengangkat elemen 3px, scale(1.05) membesarkan 5%.
+
+[3] ANALOGI
+Pseudo-class itu seperti reaksi seseorang.
+- :hover = wajah yang tersenyum saat kamu dekati.
+- :focus = perhatian penuh saat kamu ajak bicara.
+- transition = perubahan ekspresi yang lembut, bukan kaget.
+- ::before/::after = aksesori yang selalu menempel (topi dan syal) yang
+  ditambahkan tanpa mengubah isi tubuh.
+
+[4] KODE CONTOH
+Pada style.css:
+- .tombol punya transition agar warna dan posisinya berubah halus.
+- .tombol:hover mengubah warna dan mengangkat tombol dengan translateY(-3px).
+- .input:focus mengubah border dan memberi efek glow tanpa outline bawaan.
+- .daftar li:first-child mewarnai item pertama (HTML) menjadi merah.
+- .seksi::before menambahkan simbol "◆" sebelum judul seksi.
+- .daftar li::after menambahkan tanda centang di akhir tiap item.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah durasi transition .tombol menjadi 0.6s.
+2. Ganti transform hover menjadi scale(1.05).
+3. Ubah warna border .input:focus menjadi #16a085.
+4. Ganti simbol pada .seksi::before menjadi "★ ".
+5. Ubah .daftar li:first-child menjadi li:last-child.
+
+[6] TANTANGAN (5 menit)
+Buat class .kartu-hover: saat :hover ia berubah warna latar dan sedikit
+membesar (scale), dengan transition 0.3s. Jelaskan mengapa transition perlu
+ditulis pada keadaan normal, bukan hanya di :hover.
+
+[7] RINGKASAN
+- :hover, :focus, :first-child memilih elemen berdasarkan kondisi.
+- ::before dan ::after menambah konten dan wajib punya content.
+- transition membuat perubahan properti menjadi halus.
+- transform mengubah posisi/ukuran tanpa mengganggu layout lain.
+
+[8] PERSIAPAN BESOK
+Besok: responsive web (meta viewport, media query, pendekatan mobile-first).

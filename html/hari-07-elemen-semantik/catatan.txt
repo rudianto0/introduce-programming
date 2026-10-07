@@ -1,0 +1,67 @@
+===============================
+HARI 07 - Elemen Semantik
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami apa itu elemen semantik dan mengapa penting.
+- Memakai header, nav, main, section, article, aside, footer.
+- Merapikan halaman sederhana agar strukturnya bermakna.
+
+[2] TEORI SINGKAT
+Elemen semantik adalah tag yang namanya menjelaskan fungsinya.
+Dulu orang menulis <div> untuk segalanya, sehingga sulit dipahami
+baik oleh manusia maupun mesin pencari.
+
+Elemen semantik utama:
+- <header>  : bagian atas halaman/bagian (judul, logo).
+- <nav>     : kumpulan tautan navigasi.
+- <main>    : konten utama, hanya satu per halaman.
+- <section> : kelompok konten bertema sama, biasanya punya heading.
+- <article> : konten mandiri yang bisa berdiri sendiri (berita, post).
+- <aside>   : konten sampingan (info tambahan, iklan, tautan terkait).
+- <footer>  : bagian bawah halaman (hak cipta, kontak).
+
+Manfaatnya: kode lebih mudah dibaca, aksesibilitas lebih baik untuk
+pembaca layar, dan mesin pencari lebih memahami isi halaman.
+
+[3] ANALOGI
+Bayangkan koran. Bagian judul di atas adalah header. Daftar halaman
+adalah nav. Berita utama adalah main. Setiap berita adalah article.
+Kolom "info singkat" di pinggir adalah aside. Bagian cetakan penerbit
+di bawah adalah footer. Semuanya punya tempat yang jelas.
+
+[4] KODE CONTOH
+- <header> : berisi <h1> dan deskripsi singkat.
+- <nav> : daftar <a> menuju bagian halaman.
+- <main> : membungkus konten inti.
+- <section id="artikel"> : dikelompokkan dengan heading.
+- <article> : masing-masing tulisan mandiri.
+- <aside> : info tambahan di samping materi utama.
+- <footer> : hak cipta dengan &copy; untuk simbol (c).
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama semantik.html.
+2. Tulis struktur dasar HTML.
+3. Buat <header> berisi <h1> nama situsmu dan satu <p>.
+4. Buat <nav> berisi 3 tautan <a>.
+5. Buat <main> dan di dalamnya dua <section>.
+6. Di dalam section pertama, buat satu <article> dengan <h3> dan <p>.
+7. Tambahkan <aside> berisi satu fakta menarik.
+8. Tutup dengan <footer> berisi &copy; dan tahun.
+9. Simpan dan buka di browser.
+
+[6] TANTANGAN (5 menit)
+Ambil halaman latihan hari ke-3 (teks.html). Ganti pembungkusnya
+menjadi elemen semantik: header untuk judul, main untuk isi, dan
+footer untuk penutup. Rasakan bedanya saat membaca kode.
+
+[7] RINGKASAN
+- Elemen semantik menjelaskan fungsi, bukan hanya tampilan.
+- header, nav, main, section, article, aside, footer.
+- main hanya satu per halaman.
+- article = konten mandiri, section = kelompok bertema.
+- Kode lebih rapi dan ramah aksesibilitas.
+
+[8] PERSIAPAN BESOK
+Besok: proyek mini halaman profil/CV memakai semua materi hari 1-7.

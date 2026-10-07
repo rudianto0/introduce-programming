@@ -1,0 +1,64 @@
+===============================
+HARI 26 - Array
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat dan mengakses array.
+- Menambah/menghapus item dengan push, pop, shift, unshift.
+- Mengubah dan menyaring data dengan map dan filter.
+- Mencari data dengan find dan includes, serta menggabungkan dengan join.
+
+[2] TEORI SINGKAT
+Array adalah daftar berurutan, ditulis di dalam tanda kurung siku:
+const angka = [10, 20, 30];
+Nomor urutnya (index) dimulai dari 0, jadi angka[0] adalah 10.
+
+Menambah/menghapus item:
+- push(x)    : tambah di akhir.
+- unshift(x) : tambah di awal.
+- pop()      : hapus item terakhir.
+- shift()    : hapus item pertama.
+
+Metode penting:
+- length   : jumlah item.
+- map(fn)  : ubah setiap item, hasilnya array BARU.
+- filter(fn): simpan item yang lolos uji, hasilnya array BARU.
+- find(fn) : ambil item PERTAMA yang lolos uji.
+- includes(x): cek apakah ada (true/false).
+- join(sep): gabung semua item menjadi satu string.
+
+Kesalahan umum: mengira index mulai dari 1. Padahal item pertama adalah index 0. Juga sering lupa bahwa map dan filter mengembalikan array baru, bukan mengubah array asli.
+
+[3] ANALOGI
+Array itu seperti rak buku berurutan. Kamu bisa menaruh buku di ujung depan (unshift) atau belakang (push), mengambilnya (pop/shift), dan mencatat daftar judulnya (join). map itu seperti menempel stiker baru ke setiap buku, filter itu memilih hanya buku tertentu.
+
+[4] KODE CONTOH
+- index.html: menyediakan <p id="output"> dan memuat script.js.
+- script.js:
+  * Membuat array angka dan array antrian.
+  * Menambah dan menghapus item lalu menampilkan hasilnya.
+  * map menggandakan semua angka, filter menyaring angka > 25.
+  * find mengambil angka pertama yang > 25, includes mengecek nilai.
+  * Hasil filter ditampilkan ke halaman dengan join.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat array nilaiUjian = [70, 85, 60, 90, 55].
+2. Tampilkan panjangnya dengan length.
+3. Gunakan filter untuk mengambil nilai >= 75.
+4. Gunakan map untuk menambah 5 ke setiap nilai (bonus).
+5. Tampilkan hasil filter dengan join(", ") ke #output.
+
+[6] TANTANGAN (5 menit)
+Dari array buah = ["apel", "jeruk", "mangga", "pisang"], gunakan find untuk mencari buah dengan lebih dari 5 huruf, lalu tampilkan hasilnya.
+
+[7] RINGKASAN
+- Array adalah daftar berurutan, index dimulai dari 0.
+- push/unshift menambah, pop/shift menghapus.
+- map mengubah, filter menyaring, find mencari satu item.
+- includes untuk cek keberadaan, join untuk menggabung.
+- map dan filter menghasilkan array baru.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar object: properti, method, dot vs bracket, nested object, destructuring, dan Object.keys/values.

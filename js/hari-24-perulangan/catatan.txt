@@ -1,0 +1,61 @@
+===============================
+HARI 24 - Perulangan
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengulang kode dengan for dan while.
+- Mengenal do-while dan kapan ia berbeda dari while.
+- Menelusuri isi array dengan for...of dan forEach.
+- Menghindari perulangan tak berujung (infinite loop).
+
+[2] TEORI SINGKAT
+Perulangan dipakai agar kita tidak menulis kode yang sama berulang kali.
+
+for cocok saat jumlah putaran sudah diketahui:
+for (let i = 1; i <= 5; i++) { ... }
+Bagian di dalamnya: nilai awal (i = 1), kondisi berhenti (i <= 5), dan perubahan (i++).
+
+while mengulang selama kondisi bernilai true. Kita harus mengubah variabel di dalamnya agar berhenti, kalau tidak akan infinite loop.
+
+do...while mirip while, tetapi badannya dijalankan minimal satu kali sebelum kondisi diperiksa.
+
+for...of langsung mengambil setiap item array:
+for (const item of buah) { ... }
+
+forEach menjalankan sebuah fungsi untuk tiap item. Fungsinya bisa menerima (item, index).
+
+Kesalahan umum: lupa i++ di while/for sehingga loop tidak pernah berhenti, dan browser bisa macet.
+
+[3] ANALOGI
+Perulangan itu seperti push-up. for itu "lakukan 10 kali", while itu "lakukan terus sampai lelah", dan do...while itu "lakukan dulu sekali, baru tanya apakah masih kuat". forEach itu seperti guru yang memanggil tiap siswa satu per satu di daftar hadir.
+
+[4] KODE CONTOH
+- index.html: menyediakan <div id="output"> dan memuat script.js.
+- script.js:
+  * for mencetak angka 1 sampai 5.
+  * while menghitung mundur dari 5 dan berhenti karena hitungan--.
+  * do-while berjalan sekali walau kondisinya salah.
+  * for...of dan forEach menelusuri array buah.
+  * Di akhir, sebuah for menyusun daftar <li> lalu ditampilkan dengan innerHTML.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat for yang mencetak angka genap 2 sampai 10.
+2. Buat while yang menghitung total 1 + 2 + 3 + ... sampai 10 (5 + 6 + ... ), simpan di variabel total.
+3. Tampilkan "Total: <total>" ke #output.
+4. Buat array berisi 3 nama temanmu.
+5. Gunakan for...of untuk menampilkan tiap nama ke Console.
+
+[6] TANTANGAN (5 menit)
+Gunakan for...of pada array angka [3, 7, 10, 4] dan tampilkan hanya angka yang lebih besar dari 5.
+
+[7] RINGKASAN
+- for untuk jumlah putaran yang sudah diketahui.
+- while mengulang selama kondisi true; jangan lupa mengubah variabelnya.
+- do-while menjalankan badan minimal sekali.
+- for...of dan forEach untuk menelusuri array.
+- Waspadai infinite loop.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar fungsi: declaration, parameter, return, function expression, dan arrow function.

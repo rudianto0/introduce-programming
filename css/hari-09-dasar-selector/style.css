@@ -1,0 +1,39 @@
+/* =====================================
+   DAY 09 - CSS SELECTOR BASICS
+   This file is loaded by <link rel="stylesheet" href="style.css">
+   ===================================== */
+
+/* Element selector: targets every <p> element */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Class selector: starts with a dot (.), can be reused many times */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    width: 320px;
+}
+
+.pekerjaan {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.deskripsi {
+    color: #777777;
+}
+
+.tombol {
+    /* A link styled to look like a button */
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+/* ID selector: starts with a hash (#), unique on the page */
+#nama {
+    font-size: 24px;
+}

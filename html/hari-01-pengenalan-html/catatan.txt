@@ -1,0 +1,63 @@
+===============================
+HARI 01 - Pengenalan HTML
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami apa itu HTML dan fungsinya.
+- Mengenal browser dan VS Code sebagai alat kerja.
+- Bisa menyimpan file .html dan membukanya di browser.
+- Membuat halaman pertama: "Halo, Dunia!".
+
+[2] TEORI SINGKAT
+HTML adalah singkatan dari HyperText Markup Language. HTML bukan
+bahasa pemrograman, melainkan bahasa penanda (markup). Tugasnya
+memberi tahu browser: "ini judul", "ini paragraf", "ini gambar".
+
+HTML ditulis dengan tag. Tag biasanya berpasangan: ada tag pembuka
+dan tag penutup. Contoh: <h1> dan </h1>. Tanda garis miring (/) di
+depan menandakan tag penutup.
+
+Sebuah halaman HTML adalah file teks biasa yang disimpan dengan
+akhiran .html. Browser (Chrome, Edge, Firefox) membaca file itu lalu
+menampilkannya sebagai halaman web.
+
+[3] ANALOGI
+Bayangkan HTML seperti kerangka rumah. Tembok, pintu, dan jendela
+adalah tag. Browser adalah pembangun yang membaca gambar denah
+(HTML) dan mewujudkannya menjadi rumah yang bisa dilihat. Tanpa
+denah, pembangun tidak tahu apa yang harus dibangun.
+
+[4] KODE CONTOH
+Buka index.html hari ini dan perhatikan bagian-bagiannya:
+- <meta charset="UTF-8"> : memberi tahu browser cara membaca huruf.
+- <title> : judul yang muncul di tab browser.
+- <h1> : judul besar di halaman.
+- <p> : paragraf untuk teks biasa.
+- <br> : memindahkan teks ke baris baru (tidak butuh tag penutup).
+- Komentar <!-- ... --> hanya untuk catatan, tidak tampil di browser.
+
+[5] LATIHAN (10 menit)
+1. Buat folder baru bernama latihan-html di komputer kamu.
+2. Buka VS Code, lalu buat file baru bernama index.html.
+3. Ketik sendiri (jangan copy-paste) struktur berikut:
+   <!DOCTYPE html>, <html>, <head>, <title>, lalu <body>.
+4. Di dalam <body>, ketik <h1>Nama Saya</h1>.
+5. Di bawahnya, ketik <p>Saya belajar HTML hari pertama.</p>.
+6. Simpan dengan Ctrl+S, lalu buka file itu dengan cara klik dua kali
+   di File Explorer (atau klik kanan > Open with > browser).
+7. Amati judul di tab browser dan teks di halaman.
+
+[6] TANTANGAN (5 menit)
+Ubah isi <title> dan <h1> dengan satu kalimat tentang cita-citamu,
+lalu simpan dan muat ulang browser (F5). Pastikan perubahan terlihat.
+
+[7] RINGKASAN
+- HTML = bahasa penanda untuk membuat struktur halaman web.
+- Tag biasanya berpasangan: pembuka dan penutup.
+- File HTML disimpan dengan akhiran .html.
+- Browser membaca dan menampilkan file HTML.
+- VS Code dipakai untuk menulis kode.
+
+[8] PERSIAPAN BESOK
+Besok: struktur lengkap dokumen HTML (DOCTYPE, head, body, dan meta).

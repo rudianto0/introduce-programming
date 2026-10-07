@@ -1,0 +1,68 @@
+===============================
+HARI 04 - Link dan Gambar
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat tautan dengan <a> dan atribut href.
+- Mengenal atribut target="_blank".
+- Menampilkan gambar dengan <img>, src, alt, dan width.
+- Membedakan path relatif dan path absolut.
+
+[2] TEORI SINGKAT
+Tautan dibuat dengan tag <a> (anchor). Atribut href berisi alamat
+tujuan. Contoh: <a href="https://google.com">Google</a>. Atribut
+href bisa berupa alamat lengkap (absolut) atau nama file di sekitar
+dokumen (relatif).
+
+Gambar ditampilkan dengan <img>. Tag ini tidak punya tag penutup.
+Atribut pentingnya:
+- src : sumber gambar.
+- alt : teks pengganti jika gambar gagal dimuat, juga membantu
+        pembaca layar untuk tunanetra.
+- width : lebar gambar dalam piksel.
+
+Path relatif berarti alamat berdasarkan posisi file kita. Contoh:
+"foto.jpg" (file yang sama folder) atau "img/foto.jpg" (di subfolder).
+Path absolut adalah alamat lengkap, misalnya
+"https://contoh.com/gambar/foto.jpg".
+
+[3] ANALOGI
+Tautan seperti pintu menuju ruangan lain. href adalah alamat ruangannya.
+Jika alamatnya "kamar sebelah" itu path relatif (dari tempatmu berdiri).
+Jika alamatnya "Jalan Merdeka No. 1, Jakarta" itu path absolut (lengkap,
+dari mana pun kamu berada).
+
+[4] KODE CONTOH
+- <a href="..."> : pembuka tautan, isi teks di antara tag.
+- target="_blank" : membuka tautan di tab baru.
+- <a href="halaman-lain.html"> : contoh path relatif.
+- <img src="..." alt="..."> : src sumber, alt deskripsi gambar.
+- width="240" : mengatur lebar gambar agar tidak terlalu besar.
+- Gambar contoh memakai data URI agar tetap tampil tanpa internet.
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama link.html.
+2. Tulis struktur dasar HTML.
+3. Tambahkan <h1>Tautan Favoritku</h1>.
+4. Ketik 3 tautan <a> ke situs yang kamu suka, lengkap dengan teks.
+5. Beri salah satu tautan target="_blank".
+6. Tambahkan satu gambar memakai <img> dengan src, alt, dan width.
+   Untuk latihan, kamu boleh memakai gambar dari internet atau file
+   gambar milikmu sendiri di folder yang sama.
+7. Simpan dan buka di browser.
+
+[6] TANTANGAN (5 menit)
+Buat subfolder bernama gambar di dalam folder latihanmu. Pindahkan
+satu file gambar ke sana, lalu ubah src menjadi "gambar/nama-file.jpg".
+Pastikan gambarnya tetap tampil.
+
+[7] RINGKASAN
+- <a href="..."> membuat tautan.
+- target="_blank" membuka tautan di tab baru.
+- <img> butuh src dan sebaiknya selalu ada alt.
+- width mengatur lebar gambar.
+- Path relatif berdasarkan posisi file, absolut alamat penuh.
+
+[8] PERSIAPAN BESOK
+Besok: menyusun daftar dan tabel.

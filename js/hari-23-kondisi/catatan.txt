@@ -1,0 +1,57 @@
+===============================
+HARI 23 - Kondisi
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat keputusan dengan if / else if / else.
+- Memakai switch untuk banyak pilihan pasti.
+- Menulis if/else singkat dengan ternary.
+- Memahami konsep truthy dan falsy.
+
+[2] TEORI SINGKAT
+Kondisi membuat program bisa memilih jalur. Struktur if menjalankan blok kode hanya jika kondisinya true:
+if (nilai >= 90) { ... } else if (nilai >= 80) { ... } else { ... }
+
+switch cocok saat kita membandingkan SATU nilai dengan banyak nilai pasti. Jangan lupa break agar tidak "jatuh" ke case berikutnya:
+switch (hari) { case "Senin": ...; break; default: ...; }
+
+Ternary adalah bentuk singkat if/else yang menghasilkan nilai:
+const status = umur >= 17 ? "Boleh" : "Tidak boleh";
+
+Truthy dan falsy: ada nilai yang dianggap "salah" (falsy), yaitu false, 0, "", null, undefined, dan NaN. Semua nilai lain dianggap "benar" (truthy).
+
+Kesalahan umum: memakai = (penugasan) padahal maksudnya === (perbandingan). Contoh if (x = 5) selalu true dan malah mengubah nilai x. Juga sering lupa break di switch.
+
+[3] ANALOGI
+Kondisi itu seperti rambu di persimpangan. Jika lampu hijau, jalan; jika kuning, hati-hati; jika merah, berhenti. Ternary itu seperti memilih cepat "makan atau tidak?" dalam satu tarikan napas.
+
+[4] KODE CONTOH
+- index.html: menyediakan <p id="output"> dan memuat script.js.
+- script.js:
+  * Menentukan grade dari nilai dengan if / else if / else.
+  * Memakai switch untuk mengecek nilai hari, termasuk menggabungkan dua case ("Sabtu" dan "Minggu").
+  * Menentukan status SIM dengan ternary.
+  * Menunjukkan bahwa string yang tidak kosong bersifat truthy pada if (nama).
+  * Menampilkan ringkasan ke halaman.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Buat variabel angka dengan nilai bebas (misal 6).
+2. Tulis if untuk mengecek apakah angka genap: angka % 2 === 0.
+3. Jika genap tampilkan "Genap", jika ganjil tampilkan "Ganjil".
+4. Buat ternary yang menyimpan "Positif", "Nol", atau "Negatif" dari sebuah angka (boleh if/else biasa).
+5. Tampilkan hasilnya ke Console dan ke #output.
+
+[6] TANTANGAN (5 menit)
+Buat switch untuk angka 1 sampai 3: 1 => "Satu", 2 => "Dua", 3 => "Tiga", selain itu => "Tidak dikenal". Uji dengan beberapa nilai.
+
+[7] RINGKASAN
+- if / else if / else untuk memilih jalur berdasarkan kondisi.
+- switch untuk banyak pilihan pasti, ingat break.
+- Ternary = if/else singkat yang menghasilkan nilai.
+- Nilai falsy: false, 0, "", null, undefined, NaN; sisanya truthy.
+- Jangan tertukar antara = (isi nilai) dan === (bandingkan).
+
+[8] PERSIAPAN BESOK
+Besok kita belajar perulangan: for, while, do-while, for...of, dan forEach.

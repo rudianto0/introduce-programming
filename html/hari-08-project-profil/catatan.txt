@@ -1,0 +1,61 @@
+===============================
+HARI 08 - Proyek Mini: Halaman Profil
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Menggabungkan seluruh materi hari 1-7 dalam satu halaman.
+- Menyusun halaman profil/CV pribadi yang rapi.
+- Melatih membaca dan mengatur struktur kode sendiri.
+
+[2] TEORI SINGKAT
+Hari ini kita tidak belajar tag baru. Kita merangkai semua yang
+sudah dipelajari:
+- Struktur dokumen (DOCTYPE, head, body).
+- Teks: heading, paragraf, strong, em, blockquote.
+- Tautan dan gambar.
+- Daftar (ul, ol) dan tabel.
+- Formulir kontak.
+- Elemen semantik (header, nav, main, section, article, aside, footer).
+
+Tujuannya melatih berpikir sebagai perancang halaman: apa isi utama,
+bagian apa saja, dan tag apa yang paling tepat.
+
+[3] ANALOGI
+Seperti merakit mebel dari potongan yang sudah dipelajari. Semua
+baut, papan, dan palu sudah kamu kenal. Sekarang tugasnya menyusun
+menjadi satu lemari yang utuh dan rapi.
+
+[4] KODE CONTOH
+- header + h1 + em : identitas dan julukan pemilik profil.
+- nav : tautan ke bagian halaman memakai href="#id".
+- section id="tentang" : berisi gambar (data URI) dan paragraf.
+- table : menyusun riwayat pendidikan dalam baris-kolom.
+- ul dan ol : menampilkan keahlian dan rencana belajar.
+- aside + blockquote : fakta singkat yang menonjol.
+- form : formulir kontak dengan label, input, textarea, button.
+- footer + small : informasi penutup dan hak cipta.
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama profil.html.
+2. Salin kerangka dari index.html sebagai panduan, TETAPI ganti
+   isinya dengan data milikmu sendiri (nama, sekolah, keahlian).
+3. Pastikan ada: header, nav, minimal 3 section, satu aside,
+   dan footer.
+4. Ganti foto memakai inisial namamu pada bagian SVG, atau gambar
+   milikmu sendiri.
+5. Simpan dan buka di browser.
+
+[6] TANTANGAN (5 menit)
+Tambahkan satu section baru bernama "Pengalaman" yang berisi satu
+<article> dengan judul dan paragraf. Tambahkan pula tautannya di nav.
+
+[7] RINGKASAN
+- Satu halaman bisa menggabungkan banyak tag sekaligus.
+- Elemen semantik membuat struktur jelas dan mudah dirawat.
+- href="#id" membuat navigasi di dalam satu halaman.
+- alt pada gambar penting untuk aksesibilitas.
+- Konsistensi latihan membuat kemampuan makin kuat.
+
+[8] PERSIAPAN BESOK
+Selanjutnya: tahap CSS untuk mempercantik tampilan halamanmu.

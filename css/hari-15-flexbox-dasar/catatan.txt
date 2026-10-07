@@ -1,0 +1,64 @@
+===============================
+HARI 15 - Flexbox Dasar
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengaktifkan flexbox dengan display: flex pada elemen induk.
+- Mengatur arah dengan flex-direction.
+- Membagi ruang dengan justify-content dan align-items.
+
+[2] TEORI SINGKAT
+Flexbox adalah cara mengatur posisi elemen ANAK di dalam sebuah INDUK.
+Kuncinya: beri display: flex pada INDUK, bukan pada anak.
+
+Setelah induk menjadi flex container:
+- Semua anak otomatis sejajar.
+- Ada dua sumbu: MAIN axis (arah utama) dan CROSS axis (tegak lurus).
+- flex-direction menentukan arah MAIN axis:
+    row (default, mendatar) atau column (menurun).
+- justify-content mengatur sebaran sepanjang MAIN axis:
+    flex-start, center, flex-end, space-between, space-around, space-evenly.
+- align-items mengatur perataan sepanjang CROSS axis:
+    flex-start, center, flex-end, stretch (default).
+
+[3] ANALOGI
+Flexbox itu seperti mengatur buku di rak.
+- display: flex = memutuskan rak ini dipakai untuk menata dari kiri ke kanan.
+- flex-direction = arah menata (mendatar atau bertingkat).
+- justify-content = jarak antar buku di sepanjang rak.
+- align-items = apakah buku diletakkan rata atas, tengah, atau bawah.
+
+[4] KODE CONTOH
+Pada style.css:
+- .toolbar { display: flex; justify-content: center; align-items: center; }
+  membuat tiga tombol sejajar dan berada di tengah.
+- flex-direction: row pada .toolbar artinya tombol berurutan mendatar.
+- .barisan menengahkan kartu mini.
+- .mini juga flex agar avatar dan teks berdampingan; align-items: center
+  membuat avatar sejajar tengah dengan teks.
+- Pada index.html, perhatikan bahwa class flex dipasang di elemen pembungkus
+  (toolbar, barisan, mini), bukan di tombol.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah justify-content .toolbar menjadi space-between, amati jaraknya.
+2. Ganti menjadi space-around lalu space-evenly.
+3. Ubah flex-direction .toolbar menjadi column dan lihat tombol menumpuk.
+4. Kembalikan ke row, lalu ubah align-items .mini menjadi flex-start.
+5. Tambahkan satu tombol baru di .toolbar di index.html.
+
+[6] TANTANGAN (5 menit)
+Buat .toolbar-vertikal dengan display: flex dan flex-direction: column, isi
+tiga tombol, lalu atur align-items: flex-end agar tombol rata kanan. Jelaskan
+peran MAIN axis dan CROSS axis pada kasus ini.
+
+[7] RINGKASAN
+- Flexbox dipasang di INDUK: display: flex.
+- flex-direction menentukan arah MAIN axis (row/column).
+- justify-content mengatur MAIN axis, align-items mengatur CROSS axis.
+- Anak flex otomatis sejajar dan mudah ditengahkan.
+
+[8] PERSIAPAN BESOK
+Besok: flexbox lanjutan (gap, flex-wrap, flex-grow, flex-shrink,
+flex-basis, align-self).

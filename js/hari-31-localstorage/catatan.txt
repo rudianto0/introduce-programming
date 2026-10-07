@@ -1,0 +1,60 @@
+===============================
+HARI 31 - localStorage
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Menyimpan data di browser dengan localStorage.
+- Memakai setItem, getItem, dan removeItem.
+- Menyimpan object/array dengan JSON.stringify dan JSON.parse.
+- Membuat data tetap ada setelah halaman di-refresh.
+
+[2] TEORI SINGKAT
+localStorage adalah "lemari kecil" di browser yang isinya tidak hilang saat halaman di-refresh atau ditutup. Data tersimpan per browser dan per alamat.
+
+Perintah utama:
+- localStorage.setItem("kunci", nilai) -> menyimpan.
+- localStorage.getItem("kunci")         -> mengambil (null jika belum ada).
+- localStorage.removeItem("kunci")      -> menghapus.
+
+PENTING: localStorage hanya bisa menyimpan teks (string). Untuk menyimpan object/array, ubah dulu menjadi teks dengan JSON.stringify, dan saat mengambil ubah kembali dengan JSON.parse.
+
+Contoh:
+localStorage.setItem("profil", JSON.stringify({ nama: "Budi" }));
+const profil = JSON.parse(localStorage.getItem("profil"));
+
+Kesalahan umum: menyimpan object langsung tanpa JSON.stringify sehingga hasilnya menjadi "[object Object]", lalu bingung saat dibaca kembali. Selalu cek apakah getItem mengembalikan null sebelum dipakai.
+
+Catatan: saat membuka dengan file://, beberapa browser tetap mengizinkan localStorage. Jika browser tertentu memblokirnya, buka lewat Live Server sebagai alternatif.
+
+[3] ANALOGI
+localStorage itu seperti buku catatan yang ditempel di dinding kamar. Setiap kali kamu menulis (setItem), catatannya tetap ada walau kamu keluar kamar (menutup tab). Saat kembali, kamu tinggal membacanya lagi (getItem).
+
+[4] KODE CONTOH
+- index.html: input nama plus tiga tombol (Simpan, Tampilkan, Hapus) dan area output.
+- script.js:
+  * Tombol Simpan memanggil setItem("namaPengguna", nama).
+  * Tombol Tampilkan memakai getItem dan menangani kemungkinan null.
+  * Tombol Hapus memakai removeItem.
+  * Contoh object disimpan dengan JSON.stringify lalu dibaca lagi dengan JSON.parse.
+  * Saat halaman dibuka, data yang tersimpan langsung ditampilkan.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di script.js:
+1. Tambahkan input untuk menyimpan "kota".
+2. Simpan kota ke localStorage dengan setItem.
+3. Saat halaman dibuka, baca lagi dengan getItem dan tampilkan ke #output.
+4. Buat object { kota, tahun } lalu simpan dengan JSON.stringify.
+5. Baca kembali dengan JSON.parse dan tampilkan salah satu propertinya.
+
+[6] TANTANGAN (5 menit)
+Buat tombol "Hitung Kunjungan". Setiap kali diklik, ambil angka kunjungan dari localStorage (default 0), tambah 1, lalu simpan kembali. Tampilkan jumlahnya. Refresh halaman dan pastikan angkanya berlanjut.
+
+[7] RINGKASAN
+- localStorage menyimpan data yang bertahan setelah refresh.
+- setItem untuk menyimpan, getItem untuk membaca, removeItem untuk menghapus.
+- Hanya menyimpan string; gunakan JSON.stringify/parse untuk object.
+- Selalu tangani nilai null dari getItem.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar fetch dan async/await untuk mengambil data dari internet. Hari itu butuh koneksi internet.

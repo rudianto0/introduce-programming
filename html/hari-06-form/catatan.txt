@@ -1,0 +1,72 @@
+===============================
+HARI 06 - Formulir
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat formulir dengan tag <form>.
+- Menghubungkan <label> dengan input memakai for dan id.
+- Memakai input: text, email, password, radio, checkbox.
+- Memakai <textarea>, <select>/<option>, dan <button>.
+
+[2] TEORI SINGKAT
+Formulir dipakai untuk menerima masukan dari pengguna. Semua input
+dibungkus dalam <form>. Setiap input sebaiknya punya <label> agar
+jelas fungsinya. Atribut for pada label harus sama dengan id pada
+input agar keduanya terhubung (klik label = fokus ke input).
+
+Jenis input penting:
+- type="text"     : teks satu baris (nama).
+- type="email"    : email, browser bisa memvalidasi format.
+- type="password" : teks tersembunyi (titik-titik).
+- type="radio"    : pilih SATU dari beberapa pilihan. Semua radio
+                    dalam satu grup harus punya name yang sama.
+- type="checkbox" : centang, bisa banyak sekaligus.
+
+<textarea> untuk teks panjang beberapa baris. <select> berisi
+<option> untuk daftar pilihan. <button type="submit"> mengirim form.
+
+[3] ANALOGI
+Formulir web seperti formulir kertas di kantor. Label adalah
+pertanyaan, input adalah kolom kosong yang kita isi. Radio seperti
+pilihan ganda (pilih satu), checkbox seperti kotak centang (bisa
+banyak), dan select seperti pilihan dari daftar menu.
+
+[4] KODE CONTOH
+- <form> : pembungkus semua kolom.
+- <label for="nama"> + <input id="nama"> : pasangan label-input.
+- placeholder : teks abu-abu petunjuk di dalam kolom.
+- name : nama data yang dikirim saat form disubmit.
+- radio name="kelamin" : name sama = satu grup pilihan.
+- <textarea rows="4" cols="30"> : ukuran kotak teks.
+- <select><option> : dropdown, value dikirim ke server.
+- <button type="submit"> : tombol untuk mengirim form.
+
+[5] LATIHAN (10 menit)
+1. Buat file baru bernama form.html.
+2. Tulis struktur dasar HTML.
+3. Buat <h1>Formulir Kontak</h1>.
+4. Buat <form> berisi:
+   - label + input text untuk Nama.
+   - label + input email untuk Email.
+   - label + input password untuk Password.
+5. Tambahkan radio untuk memilih "Pelajar" atau "Umum".
+6. Tambahkan checkbox "Berlangganan berita".
+7. Tambahkan select kota dengan 3 pilihan.
+8. Tambahkan textarea dan button "Kirim".
+9. Simpan dan buka di browser, coba isi formulirnya.
+
+[6] TANTANGAN (5 menit)
+Hubungkan setiap input dengan label memakai id dan for yang cocok.
+Buktikan: klik teks label, kursor otomatis pindah ke kolom input.
+
+[7] RINGKASAN
+- <form> membungkus semua input.
+- label for dan input id harus sama agar terhubung.
+- text, email, password mengisi satu baris teks.
+- radio (pilih satu) dan checkbox (pilih banyak).
+- textarea untuk teks panjang, select untuk dropdown.
+- button type="submit" mengirim form.
+
+[8] PERSIAPAN BESOK
+Besok: menyusun halaman dengan elemen semantik yang rapi.

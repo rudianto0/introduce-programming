@@ -1,0 +1,66 @@
+===============================
+HARI 17 - CSS Grid
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengaktifkan grid dengan display: grid.
+- Mengatur kolom dan baris dengan grid-template-columns/rows.
+- Menggabungkan sel dengan grid-column dan grid-row span.
+
+[2] TEORI SINGKAT
+Flexbox bagus untuk SATU arah (satu baris fokus). Grid bagus untuk DUA arah:
+baris DAN kolom sekaligus, seperti tabel namun fleksibel.
+
+Caranya: beri display: grid pada INDUK, lalu atur:
+- grid-template-columns: menentukan jumlah & lebar kolom.
+  Contoh: 1fr 1fr 1fr = tiga kolom sama besar (1fr = satu bagian ruang).
+  Bisa campur: 200px 1fr 1fr.
+- grid-template-rows: menentukan tinggi baris. Bila tidak diisi, baris dibuat
+  otomatis (grid-auto-rows untuk tingginya).
+- gap: jarak antar sel.
+
+Pada ANAK yang ingin digabung:
+- grid-column: span 2 -> menempati 2 kolom.
+- grid-row: span 2 -> menempati 2 baris.
+
+[3] ANALOGI
+Grid itu seperti papan catur atau rak telur.
+- grid-template-columns = menentukan berapa kotak ke samping.
+- grid-template-rows = berapa kotak ke bawah.
+- gap = jarak antar kotak.
+- span = satu telur yang menempati dua lubang sekaligus.
+
+[4] KODE CONTOH
+Pada style.css:
+- .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  membuat susunan 3 kolom sama lebar dengan jarak 10px.
+- grid-auto-rows: 80px menetapkan tinggi tiap baris otomatis.
+- .item mengatur tampilan tiap sel (latar gelap, teks di tengah).
+- .unggulan memakai grid-column: span 2 dan grid-row: span 2 sehingga kotak
+  "Proyek Unggulan" menempati 2 kolom dan 2 baris, menyisakan ruang untuk
+  kotak berikutnya.
+- Pada index.html, ada 6 item sehingga grid mengisi kolom sesuai urutan.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Ubah grid-template-columns menjadi 1fr 1fr (2 kolom) lalu amati.
+2. Kembalikan ke 3 kolom, ubah grid-auto-rows menjadi 100px.
+3. Ubah gap menjadi 16px.
+4. Ubah .unggulan agar hanya grid-column: span 2 (tanpa span row).
+5. Tambahkan dua .item baru di index.html.
+
+[6] TANTANGAN (5 menit)
+Buat grid baru dengan 4 kolom sama besar. Buat satu item menempati 2 kolom
+dan item lain menempati 2 baris. Jelaskan kapan sebaiknya memakai Grid
+dibanding Flexbox.
+
+[7] RINGKASAN
+- Grid mengatur layout dua arah (baris + kolom).
+- 1fr berarti satu bagian dari ruang yang tersedia.
+- gap memberi jarak antar sel.
+- grid-column/row: span N menggabungkan beberapa sel.
+
+[8] PERSIAPAN BESOK
+Besok: pseudo-class & transisi (:hover, :focus, :first-child, ::before,
+::after, transition, transform).

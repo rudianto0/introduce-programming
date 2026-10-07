@@ -1,0 +1,62 @@
+===============================
+HARI 34 - Integrasi Akhir dan Penutup
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat aplikasi integrasi akhir: Kuis Mini.
+- Menggabungkan array of objects, DOM, event, dan localStorage.
+- Membaca dan memahami kode proyek secara keseluruhan.
+- Menutup perjalanan 34 hari belajar pemrograman.
+
+[2] TEORI SINGKAT
+Hari ini kita merangkai semua yang sudah dipelajari menjadi satu aplikasi kecil yang berguna.
+
+Konsep yang dipakai:
+- Array of objects menyimpan daftar soal: { tanya, pilihan, jawaban }.
+- DOM untuk menampilkan soal dan pilihan ke halaman.
+- Event click pada setiap tombol pilihan.
+- localStorage untuk menyimpan skor terbaik (best score).
+
+Alur aplikasi:
+1. tampilkanSoal() menggambar soal ke halaman.
+2. Saat pengguna mengklik satu pilihan, program mengecek jawaban benar/salah.
+3. Semua tombol dinonaktifkan (disabled) agar tidak menjawab dua kali.
+4. Setelah jeda singkat (setTimeout), lanjut ke soal berikutnya.
+5. Di akhir, selesai() menampilkan skor dan menyimpan skor terbaik.
+
+Ini menggabungkan hampir seluruh materi: variabel, array, object, fungsi, kondisi, DOM, event, dan localStorage.
+
+[3] ANALOGI
+Aplikasi kuis seperti permainan papan ular tangga. Kamu menjawab satu kotak (soal), maju ke kotak berikutnya, sampai finis. Lalu skor terbaikmu dicatat di papan skor agar bisa kamu pecahkan lain waktu.
+
+[4] KODE CONTOH
+- index.html: berisi kartu kuis (judul soal, daftar tombol pilihan, info skor) dan bagian rekap 34 hari serta langkah selanjutnya.
+- script.js:
+  * soalList menyimpan daftar soal sebagai array of objects.
+  * tampilkanSoal() membuat tombol untuk tiap pilihan dan memasang event click.
+  * Setelah dijawab, semua tombol di-disable dan jawaban benar disorot.
+  * setTimeout memberi jeda 0,9 detik lalu pindah soal.
+  * selesai() menampilkan skor akhir dan menyimpan skor terbaik ke localStorage.
+  * Tombol "Main lagi" mengulang kuis dari awal.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Tambahkan satu soal baru ke dalam soalList (misalnya tentang HTML/CSS).
+2. Ubah jumlah pilihan pada soal itu menjadi 4 pilihan.
+3. Pastikan angka jawaban menunjuk ke index yang benar (ingat: index mulai dari 0).
+4. Uji kuis sampai selesai dan periksa skor terbaik muncul.
+5. Refresh halaman dan pastikan skor terbaik tetap tersimpan.
+
+[6] TANTANGAN (5 menit)
+Tambahkan penghitung waktu sederhana: saat kuis dimulai, mulai hitung detik dengan setInterval dan tampilkan di #info. Hentikan penghitung dengan clearInterval saat kuis selesai.
+
+[7] RINGKASAN
+- Kuis Mini menggabungkan HTML, CSS, dan JavaScript.
+- Array of objects efisien untuk menyimpan banyak data berstruktur.
+- DOM + event membuat halaman interaktif.
+- localStorage menyimpan skor terbaik.
+- Perjalanan 34 hari: dari HTML dasar, CSS, hingga aplikasi web interaktif.
+
+[8] PERSIAPAN BESOK / PENUTUP
+Tidak ada pelajaran besok - ini hari terakhir! Langkah selanjutnya: pelajari Git & GitHub untuk mengelola kode, lalu React untuk antarmuka modern, dan Node.js untuk membuat server/API. Teruslah membuat proyek kecil setiap minggu agar kemampuanmu semakin kuat. Selamat!

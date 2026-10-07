@@ -1,0 +1,57 @@
+===============================
+HARI 29 - Event
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Menanggapi aksi pengguna dengan addEventListener.
+- Mengenal event click, input, change, dan submit.
+- Menggunakan objek event (event.target).
+- Mencegah perilaku bawaan dengan preventDefault.
+
+[2] TEORI SINGKAT
+Event adalah kejadian yang dipicu pengguna, misalnya klik, mengetik, memilih, atau mengirim form. Kita "mendengarkan" event dengan:
+elemen.addEventListener("click", function () { ... });
+
+Event yang sering dipakai:
+- click : saat elemen diklik.
+- input : setiap kali isi input berubah (per huruf).
+- change: saat nilai benar-benar berubah / dipilih.
+- submit: saat form dikirim.
+
+Objek event memberi info. Misalnya event.target adalah elemen yang memicu event, dan event.target.value adalah isi input/select.
+
+preventDefault() menghentikan perilaku bawaan browser. Pada form, ini mencegah halaman ter-reload saat submit.
+
+Kesalahan umum: lupa event.preventDefault() sehingga form reload dan data "hilang"; atau memakai event.target.value di luar konteks event sehingga error.
+
+[3] ANALOGI
+Event itu seperti bel rumah. Kamu tidak perlu menunggu di depan pintu terus-menerus. Cukup pasang bel (addEventListener). Saat ada tamu menekan bel (event), barulah kamu merespons.
+
+[4] KODE CONTOH
+- index.html: berisi tombol, input teks, select warna, dan form email, masing-masing dengan id.
+- script.js:
+  * tombol: menambah penghitung klik dan menampilkan hasilnya.
+  * inputNama: menampilkan isi input setiap kali berubah.
+  * pilihWarna: menampilkan pilihan pada event change.
+  * form: memakai preventDefault lalu menampilkan email yang dikirim dan mereset form.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di index.html dan script.js:
+1. Tambahkan sebuah <button id="sapaTombol">Sapa</button>.
+2. Di JS, pilih tombol itu dan tambahkan event click.
+3. Saat diklik, ubah teks sebuah <p id="pesan"> menjadi "Halo, selamat belajar!".
+4. Tambahkan <input id="warna"> dan event input yang langsung mengubah warna latar body.
+5. Tampilkan hasil ke #output.
+
+[6] TANTANGAN (5 menit)
+Buat form sederhana dengan input nama dan tombol. Saat submit, tampilkan "Halo, <nama>" di halaman dan pastikan halaman tidak reload (gunakan preventDefault).
+
+[7] RINGKASAN
+- addEventListener("event", fungsi) untuk menanggapi aksi pengguna.
+- Event penting: click, input, change, submit.
+- event.target menunjuk elemen pemicu; .value berisi nilainya.
+- preventDefault mencegah perilaku bawaan, misalnya reload form.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar membuat elemen dinamis: createElement, appendChild, remove, dan membangun daftar dari form.

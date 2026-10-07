@@ -1,0 +1,70 @@
+===============================
+HARI 10 - Warna & Background
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Mengatur warna teks dengan color dan warna latar dengan background-color.
+- Mengenal 3 format warna: hex, rgb(), dan rgba().
+- Membuat latar bergradasi dengan linear-gradient dan efek transparan
+  dengan opacity.
+
+[2] TEORI SINGKAT
+Properti color mengubah warna TEKS, sedangkan background-color mengubah
+warna LATAR elemen.
+
+Format warna yang umum:
+- Hex      : diawali # lalu 6 digit. Contoh #2c3e50, #fff.
+- rgb()    : tingkat Merah, Hijau, Biru dari 0-255. Contoh rgb(44, 62, 80).
+- rgba()   : seperti rgb tetapi ada nilai alpha (0-1) untuk transparansi.
+  Contoh rgba(44, 62, 80, 0.4) -> 40% terlihat.
+- linear-gradient() membuat perpaduan dua warna atau lebih.
+  Contoh linear-gradient(90deg, #6a11cb, #2575fc) -> dari ungu ke biru
+  secara mendatar (90deg).
+
+opacity mengatur transparansi SELURUH elemen, termasuk teks di dalamnya,
+dengan nilai 0 (tak terlihat) sampai 1 (penuh).
+
+[3] ANALOGI
+Warna itu seperti cat tembok dan cat kertas.
+- color = warna tinta tulisan.
+- background-color = cat tembok di belakang tulisan.
+- rgba = cat yang agak tembus pandang, seperti mika berwarna.
+- linear-gradient = cat yang berubah warna dari satu sisi ke sisi lain.
+- opacity = menurunkan transparansi seluruh ruangan, termasuk tulisannya.
+
+[4] KODE CONTOH
+Pada style.css:
+- body { background-color: #eef1f5; } memberi latar abu muda ke halaman.
+- .banner memakai linear-gradient(90deg, ...) sehingga header berwarna
+  gradasi ungu ke biru.
+- .avatar memakai rgba(...) untuk latar ungu tipis dan color rgb(...) untuk
+  inisial. border-radius: 50% membuatnya bulat.
+- .kotak-rgba menunjukkan latar tembus pandang.
+- .kotak-solid memakai warna hex hijau.
+- .kotak-opacity memakai opacity: 0.5 sehingga seluruh kotak memudar.
+
+Pada index.html, perhatikan setiap div diberi class agar bisa diwarnai.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri langkahnya:
+1. Di style.css, ubah background-color body menjadi #f0f8ff.
+2. Ganti warna .banner dengan linear-gradient(135deg, #ff7e5f, #feb47b).
+3. Tambahkan satu div baru dengan class="kotak kotak-solid" di index.html.
+4. Ubah nilai opacity .kotak-opacity dari 0.5 menjadi 0.8 lalu bandingkan.
+5. Ganti warna .pekerjaan memakai rgb() pilihanmu.
+
+[6] TANTANGAN (5 menit)
+Buat class baru .kotak-gradient yang memakai linear-gradient dan pasang pada
+satu kotak. Pilih arah (deg) dan dua warna sendiri, lalu jelaskan posisi
+warnanya saat dicek di browser.
+
+[7] RINGKASAN
+- color = warna teks, background-color = warna latar.
+- Format warna: hex (#), rgb(), rgba() untuk transparansi.
+- linear-gradient membuat latar bergradasi.
+- opacity memudarkan seluruh elemen termasuk teks.
+
+[8] PERSIAPAN BESOK
+Besok: teks dan tipografi (font-family, font-size, font-weight, line-height,
+dan satuan px/em/rem/%).

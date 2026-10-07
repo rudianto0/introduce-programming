@@ -1,0 +1,89 @@
+========================================================
+PETA BELAJAR - HTML, CSS, JAVASCRIPT UNTUK PEMULA
+Estimasi: 34 hari x 30 menit (sekitar 17 jam)
+========================================================
+
+Cara pakai file ini:
+- Belajar sesuai urutan. Jangan melompat ke fase berikutnya sebelum
+  fase sekarang selesai.
+- Tiap hari buka folder "hari-NN-..." lalu baca "catatan.txt",
+  jalankan "index.html" di browser, dan KETIK ULANG kodenya sendiri.
+- Setelah selesai satu hari, ubah tanda [ ] menjadi [x] di daftar ini.
+- Kalau bingung, ulangi hari sebelumnya. Tidak masalah untuk lambat.
+
+PENTING (alur ketiga folder):
+  HTML  -> kerangka/isi halaman
+  CSS   -> tampilan/warna/tata letak
+  JS    -> perilaku/interaksi
+Ketiganya dipakai bersama. Materi dipisah per folder agar mudah dicari,
+tetapi pada akhirnya (hari 34) semuanya digabung dalam satu project.
+
+
+--------------------------------------------------------
+FASE 1 - HTML  (Hari 1-8)  folder: html\
+--------------------------------------------------------
+[ ] Hari 01 - Pengenalan HTML        (html\hari-01-pengenalan-html)
+[ ] Hari 02 - Struktur Dokumen       (html\hari-02-struktur-dokumen)
+[ ] Hari 03 - Teks & Heading         (html\hari-03-teks-heading)
+[ ] Hari 04 - Link & Gambar          (html\hari-04-link-gambar)
+[ ] Hari 05 - List & Tabel           (html\hari-05-list-tabel)
+[ ] Hari 06 - Form                   (html\hari-06-form)
+[ ] Hari 07 - Elemen Semantik        (html\hari-07-elemen-semantik)
+[ ] Hari 08 - Project: Halaman Profil (html\hari-08-project-profil)
+
+Hasil fase ini: kamu bisa membuat halaman web berisi teks, gambar,
+link, daftar, tabel, dan form.
+
+
+--------------------------------------------------------
+FASE 2 - CSS  (Hari 9-20)  folder: css\
+--------------------------------------------------------
+[ ] Hari 09 - Dasar Selector         (css\hari-09-dasar-selector)
+[ ] Hari 10 - Warna & Background     (css\hari-10-warna-background)
+[ ] Hari 11 - Teks & Tipografi       (css\hari-11-teks-tipografi)
+[ ] Hari 12 - Box Model              (css\hari-12-box-model)
+[ ] Hari 13 - Display                (css\hari-13-display)
+[ ] Hari 14 - Position               (css\hari-14-position)
+[ ] Hari 15 - Flexbox Dasar          (css\hari-15-flexbox-dasar)
+[ ] Hari 16 - Flexbox Lanjutan       (css\hari-16-flexbox-lanjutan)
+[ ] Hari 17 - CSS Grid               (css\hari-17-css-grid)
+[ ] Hari 18 - Pseudo & Transisi      (css\hari-18-pseudo-transisi)
+[ ] Hari 19 - Responsive             (css\hari-19-responsive)
+[ ] Hari 20 - Project: Landing Page  (css\hari-20-project-landing)
+
+Hasil fase ini: kamu bisa mempercantik dan menata halaman, serta
+membuat layout yang rapi di HP maupun desktop.
+
+
+--------------------------------------------------------
+FASE 3 - JAVASCRIPT  (Hari 21-34)  folder: js\
+--------------------------------------------------------
+[ ] Hari 21 - Pengenalan & Variabel  (js\hari-21-pengenalan-variabel)
+[ ] Hari 22 - Tipe Data & Operator   (js\hari-22-tipe-data-operator)
+[ ] Hari 23 - Kondisi (if/switch)    (js\hari-23-kondisi)
+[ ] Hari 24 - Perulangan             (js\hari-24-perulangan)
+[ ] Hari 25 - Fungsi                 (js\hari-25-fungsi)
+[ ] Hari 26 - Array                  (js\hari-26-array)
+[ ] Hari 27 - Object                 (js\hari-27-object)
+[ ] Hari 28 - DOM Dasar              (js\hari-28-dom-dasar)
+[ ] Hari 29 - Event                  (js\hari-29-event)
+[ ] Hari 30 - DOM & Form             (js\hari-30-dom-form)
+[ ] Hari 31 - localStorage           (js\hari-31-localstorage)
+[ ] Hari 32 - Fetch API & Async      (js\hari-32-fetch-async)  *butuh internet
+[ ] Hari 33 - Project: To-Do List    (js\hari-33-project-todo)
+[ ] Hari 34 - Project Akhir (Integrasi) (js\hari-34-integrasi-akhir)
+
+Hasil fase ini: kamu bisa membuat halaman yang berinteraksi dengan
+pengguna, menyimpan data, dan mengambil data dari internet.
+
+
+--------------------------------------------------------
+SETELAH 34 HARI
+--------------------------------------------------------
+Selamat! Kamu sudah punya fondasi dasar web development.
+Langkah selanjutnya yang disarankan:
+  1. Git & GitHub      -> menyimpan dan membagikan kode.
+  2. Framework CSS     -> Bootstrap / Tailwind (opsional).
+  3. Framework JS      -> React / Vue.
+  4. Backend           -> Node.js / .NET + database.
+  5. Perbanyak project -> portofolio adalah cara belajar terbaik.

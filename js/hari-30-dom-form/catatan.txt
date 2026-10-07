@@ -1,0 +1,59 @@
+===============================
+HARI 30 - DOM Form dan Daftar Dinamis
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Membuat elemen baru dengan createElement.
+- Menambahkan elemen ke halaman dengan appendChild.
+- Menghapus elemen dengan remove.
+- Membangun daftar dinamis dari input form.
+
+[2] TEORI SINGKAT
+Sampai sekarang HTML sudah ada sejak awal. Sekarang kita membuat elemen baru dari JavaScript.
+
+Langkahnya:
+1. const li = document.createElement("li");  -> membuat elemen (belum tampil).
+2. li.textContent = "teks";                  -> mengisi isinya.
+3. daftar.appendChild(li);                    -> menempelkannya ke halaman.
+
+Untuk menghapus, cukup panggil elemen.remove().
+
+Dalam latihan ini, setiap item dibuat bersama sebuah tombol "Hapus". Tombol itu punya event sendiri yang memanggil li.remove(). Ini disebut event listener per item.
+
+Form memakai preventDefault agar halaman tidak reload, lalu input dikosongkan dan fokus dikembalikan dengan input.focus().
+
+Kesalahan umum: lupa appendChild sehingga elemen dibuat tetapi tidak muncul; atau menempelkan tombol ke <ul> bukan ke <li> sehingga tata letaknya berantakan.
+
+[3] ANALOGI
+createElement itu seperti mengambil kertas kosong dari tumpukan. Mengisi textContent itu menulis di kertas. appendChild itu menempelkan kertas ke papan pengumuman. remove itu mencabut kertas dari papan.
+
+[4] KODE CONTOH
+- index.html: ada form dengan input, daftar <ul id="daftar">, pesan "kosong", dan info jumlah.
+- script.js:
+  * Saat form disubmit, input dibaca dan dirapikan dengan trim().
+  * Jika kosong, muncul alert dan fungsi berhenti (return).
+  * createElement membuat <li> dan tombol "Hapus".
+  * appendChild memasukkan tombol ke <li>, lalu <li> ke <ul>.
+  * updateInfo() menampilkan/menyembunyikan pesan kosong dan menghitung item.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri:
+1. Tambahkan tombol "Tandai" di tiap item yang mengubah warna latar <li> menjadi hijau muda saat diklik.
+2. Buat tombol "Bersihkan Semua" di atas daftar.
+3. Saat diklik, kosongkan seluruh isi daftar (petunjuk: daftar.innerHTML = "").
+4. Panggil updateInfo() setelah membersihkan.
+5. Uji dengan menambah beberapa item lalu membersihkannya.
+
+[6] TANTANGAN (5 menit)
+Tambahkan informasi nomor urut di depan setiap item (misalnya "1. Beli beras") memakai daftar.children.length + 1 saat membuat item.
+
+[7] RINGKASAN
+- createElement membuat elemen baru, appendChild menampilkannya.
+- remove menghapus elemen dari DOM.
+- Setiap item bisa memiliki event dan tombol sendiri.
+- preventDefault + trim menjaga input tetap rapi.
+- updateInfo menjaga tampilan tetap akurat.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar menyimpan data agar tidak hilang saat halaman ditutup: localStorage.

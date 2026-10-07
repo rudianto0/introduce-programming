@@ -1,0 +1,65 @@
+===============================
+HARI 28 - DOM Dasar
+Estimasi: 30 menit
+===============================
+
+[1] TUJUAN HARI INI
+- Memahami apa itu DOM.
+- Memilih elemen dengan querySelector dan querySelectorAll.
+- Mengubah teks (textContent) dan HTML (innerHTML).
+- Mengubah style, class, dan atribut elemen.
+
+[2] TEORI SINGKAT
+DOM (Document Object Model) adalah "peta" halaman HTML yang dibuat browser. Setiap tag menjadi objek yang bisa dibaca dan diubah oleh JavaScript. Inilah jembatan antara HTML dan JS.
+
+Memilih elemen:
+- document.querySelector("#judul")  -> elemen PERTAMA yang cocok (bisa selector CSS).
+- document.querySelectorAll("p")    -> SEMUA elemen yang cocok (mirip daftar).
+
+Mengubah isi:
+- .textContent : hanya teks.
+- .innerHTML   : teks beserta tag HTML di dalamnya.
+
+Mengubah tampilan:
+- .style.backgroundColor = "yellow" (ubah CSS langsung).
+- .classList.add("aktif") / remove / toggle (atur class CSS).
+
+Atribut:
+- .setAttribute("href", "...") dan .getAttribute("href").
+
+Kesalahan umum: menjalankan script sebelum elemen ada. Karena itu <script src="script.js"></script> diletakkan di akhir body, supaya semua elemen sudah terbaca.
+
+[3] ANALOGI
+DOM itu seperti remote TV. Halaman HTML adalah TV-nya, dan JavaScript adalah remot yang bisa mengganti channel (teks), kecerahan (style), atau warna lampu (class) tanpa mengganti TV-nya.
+
+[4] KODE CONTOH
+- index.html: punya elemen dengan id judul, deskripsi, kotak, tautan, dan jumlah, plus beberapa <p>. Ada juga class .kotak dan .aktif di <style>.
+- script.js:
+  * querySelector mengambil elemen berdasarkan id.
+  * textContent mengubah teks deskripsi.
+  * innerHTML menambahkan tag <b> ke dalam kotak.
+  * style mengubah warna, padding, dan sudut kotak.
+  * classList.add("aktif") menambahkan class.
+  * setAttribute mengubah href dan target tautan.
+  * querySelectorAll("p") menghitung jumlah paragraf.
+
+[5] LATIHAN (10 menit)
+Ketik sendiri di index.html dan script.js:
+1. Tambahkan <h2 id="subjudul">Awal</h2> di body.
+2. Di script.js, pilih elemen itu dan ubah teksnya menjadi "Sudah diubah".
+3. Ubah warnanya dengan style.color = "crimson".
+4. Tambahkan class "aktif" ke elemen #kotak.
+5. Tampilkan jumlah semua <p> ke #output.
+
+[6] TANTANGAN (5 menit)
+Ubah teks #tautan menjadi "Google", lalu setAttribute href ke "https://google.com" dan target ke "_blank". Klik tautannya untuk memastikan bekerja.
+
+[7] RINGKASAN
+- DOM adalah representasi halaman yang bisa diubah JS.
+- querySelector memilih satu elemen, querySelectorAll memilih banyak.
+- textContent untuk teks, innerHTML untuk teks + tag.
+- style, classList, dan setAttribute untuk mengubah tampilan/perilaku.
+- Letakkan script di akhir body agar elemen sudah tersedia.
+
+[8] PERSIAPAN BESOK
+Besok kita belajar event: addEventListener untuk click, input, change, dan submit.
