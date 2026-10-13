@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak</title>
+</head>
+<boody>
+    <h1>Formulir Kontak</h1>
+    <form>
+        <p>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap">
+        </p>
+            
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" >
+        </p>
+
+        <p>
+            Status: <br>
+            <input type="radio" id="pelajar" name="status" value="pelajar">
+            <label for="pelajar">Pelajar</label><br>
+
+            <input type="radio" id="umum" name="status" value="umum">
+            <label for="umum">Umum</label><br>
+        </p>
+
+        <p>
+            <input type="checkbox" id="belangganan" name="berlangganan" value="ya">
+            <label for="berlangganan">Berlangganan berita</label>
+        </p>
+
+        <p>
+            <label for="kota">Pilih Kota:</label><br>
+            <select id="kota" name="kota">
+                <option value="Bogor">Bogor</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Depok">Depok</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="pesan">Pesan</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="30" placeholder="Tulis pesan Anda di sini..."></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Kirim</button>
+        </p>
+    </form>
+
+</boody>
+</html>
